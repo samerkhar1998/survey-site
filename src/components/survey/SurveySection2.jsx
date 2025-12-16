@@ -160,7 +160,7 @@ export default function SurveySection2() {
                 height: '0.75rem',
                 left: '27px',
                 top: '50%',
-                transform: 'translateY(-50%) rotate(180deg)'
+                transform: 'translateY(-50%)'
                 
               }}
           />
@@ -421,7 +421,7 @@ export default function SurveySection2() {
               height: '0.75rem',
               left: '27px',
               top: '50%',
-              transform: 'translateY(-50%) rotate(180deg)'
+              transform: 'translateY(-50%)'
               
             }}
             />
@@ -773,7 +773,7 @@ export default function SurveySection2() {
               height: '0.75rem',
               left: '27px',
               top: '50%',
-              transform: 'translateY(-50%) rotate(180deg)'
+              transform: 'translateY(-50%)'
               
             }}
                   />
