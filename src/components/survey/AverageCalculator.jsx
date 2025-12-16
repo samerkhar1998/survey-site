@@ -42,7 +42,7 @@ export default function AverageCalculator({ answers }) {
             backgroundColor: '#0A476D', 
             color: '#FFFFFF',
             width: '7.5rem',
-            height: '1.1875rem',
+            height: '1.7875rem',
             fontSize: '0.625rem'
           }}
         >

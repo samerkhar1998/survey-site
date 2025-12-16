@@ -59,7 +59,7 @@ export default function SurveyEntrance({ onStart }) {
           <img
             src={CommentsIcon}
             alt="Comments"
-            className="w-3 h-3 mt-1"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
           />
           <p className="text-right text-sm leading-relaxed" style={{ fontSize: "0.75rem" }}>
             <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
@@ -67,24 +67,22 @@ export default function SurveyEntrance({ onStart }) {
         </div>
 
         {/* Recommendation with icon - Mobile */}
-        <div className="md:hidden mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <div className="md:hidden flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
                 src={CommentsIcon}
-                alt=""
-                className="w-3 h-3 flex-shrink-0"
+                alt="Comments"
+                style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
               />
           <p
-            className="flex items-start gap-2 text-right text-sm leading-relaxed"
+            className="text-right text-sm leading-relaxed"
             style={{ fontSize: "0.75rem" }}
             dir="rtl"
           >
-            <span className="font-bold flex items-center gap-1">
+            <span className="font-bold">
               המלצה גורפת
               
             </span>
-            – לשלב עובדים מתרבויות שונות בקבלת
-            <br />
-            החלטות לגבי האירועים והפעילויות השונות
+            – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
           </p>
         </div>
       </div>
