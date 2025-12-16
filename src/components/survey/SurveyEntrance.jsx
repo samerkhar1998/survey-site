@@ -3,6 +3,8 @@ import CoImpactLogo from "../../assets/CoImpact Logo.svg";
 import BannerRectangle from "../../assets/Rectangle 1.svg";
 import Title1 from "../../assets/Title1.svg";
 import CommentsIcon from "../../assets/Comments.svg";
+import EllipseDot from "../../assets/Ellipse 1.svg";
+
 
 export default function SurveyEntrance({ onStart }) {
   return (
@@ -89,13 +91,17 @@ export default function SurveyEntrance({ onStart }) {
       {/* Blue line with dot */}
       <div className="mt-8 -mx-[25px]">
         <div className="relative" style={{ height: '2px' }}>
-          <div
-            className="absolute w-3 h-3 rounded-full"
+          <img
+            src={EllipseDot}
+            alt=""
+            className="absolute"
             style={{
-              backgroundColor: '#0A476D',
-              left: '25px',
+              width: '0.75rem',
+              height: '0.75rem',
+              left: '27px',
               top: '50%',
-              transform: 'translateY(-50%)'
+              transform: 'translateY(-50%) rotate(180deg)'
+              
             }}
           />
           <div className="absolute" style={{ backgroundColor: '#0A476D', height: '2px', left: '37px', right: '-10px', top: '0' }} />
@@ -105,4 +111,3 @@ export default function SurveyEntrance({ onStart }) {
     
   );
 }
-

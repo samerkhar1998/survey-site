@@ -9,6 +9,7 @@ import CulturalEventCard from "./CulturalEventCard";
 import SectionRectangle from "../../assets/Section rectangle.svg";
 import AccuracyIcon from "../../assets/Accuracy.svg";
 import CommentsIcon from "../../assets/Comments.svg";
+import EllipseDot from "../../assets/Ellipse 1.svg";
 import { X } from "lucide-react";
 
 export default function SurveySection2() {
@@ -150,14 +151,18 @@ export default function SurveySection2() {
       {/* Blue line with dot */}
       <div className="mt-8 -mx-[25px]">
         <div className="relative" style={{ height: '2px' }}>
-          <div
-            className="absolute w-3 h-3 rounded-full"
-            style={{
-              backgroundColor: '#0A476D',
-              left: '25px',
-              top: '50%',
-              transform: 'translateY(-50%)'
-            }}
+          <img
+              src={EllipseDot}
+              alt=""
+              className="absolute"
+              style={{
+                width: '0.75rem',
+                height: '0.75rem',
+                left: '27px',
+                top: '50%',
+                transform: 'translateY(-50%) rotate(180deg)'
+                
+              }}
           />
           <div className="absolute" style={{ backgroundColor: '#0A476D', height: '2px', left: '37px', right: '0', top: '0' }} />
         </div>
@@ -407,14 +412,18 @@ export default function SurveySection2() {
           <div className="mt-8 -mx-[25px]">
           {/* Blue line with dot */}
           <div className="relative" style={{ height: '2px' }}>
-            <div
-              className="absolute w-3 h-3 rounded-full"
-              style={{
-                backgroundColor: '#0A476D',
-                left: '25px',
-                top: '50%',
-                transform: 'translateY(-50%)'
-              }}
+            <img
+            src={EllipseDot}
+            alt=""
+            className="absolute"
+            style={{
+              width: '0.75rem',
+              height: '0.75rem',
+              left: '27px',
+              top: '50%',
+              transform: 'translateY(-50%) rotate(180deg)'
+              
+            }}
             />
             <div className="absolute" style={{ backgroundColor: '#0A476D', height: '2px', left: '37px', right: '0', top: '0' }} />
           </div>
@@ -755,14 +764,18 @@ export default function SurveySection2() {
               {/* Blue line with dot */}
               <div className="mt-8 -mx-[25px]">
                 <div className="relative" style={{ height: '2px' }}>
-                  <div
-                    className="absolute w-3 h-3 rounded-full"
-                    style={{
-                      backgroundColor: '#0A476D',
-                      left: '25px',
-                      top: '50%',
-                      transform: 'translateY(-50%)'
-                    }}
+                  <img
+            src={EllipseDot}
+            alt=""
+            className="absolute"
+            style={{
+              width: '0.75rem',
+              height: '0.75rem',
+              left: '27px',
+              top: '50%',
+              transform: 'translateY(-50%) rotate(180deg)'
+              
+            }}
                   />
                   <div className="absolute" style={{ backgroundColor: '#0A476D', height: '2px', left: '37px', right: '0', top: '0' }} />
                 </div>
