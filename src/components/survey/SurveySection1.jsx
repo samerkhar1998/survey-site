@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import QuestionSection from "./QuestionSection";
 import SurveySummary from "./SurveySummary";
+import SectionRectangle from "../../assets/Section rectangle.svg";
+import AccuracyIcon from "../../assets/Accuracy.svg";
+import OperaGlasses from "../../assets/Opera Glasses.svg";
 
 const holidaysQuestions = [
 "עד כמה הארגון מכיר ומתייחס לכלל חגי האוכלוסיות השונות?",
@@ -68,7 +71,7 @@ export default function SurveySection1() {
         }}
       >
         <img
-          src="/src/assets/Section rectangle.svg"
+          src={SectionRectangle}
           alt="Banner"
           className="w-full h-full object-cover"
           style={{
@@ -99,7 +102,7 @@ export default function SurveySection1() {
       {/* 4. Accuracy Icon + מטרת הפרק */}
       <div className="flex items-start gap-2 mt-[20px]">
         <img
-          src="/src/assets/Accuracy.svg"
+          src={AccuracyIcon}
           alt="Accuracy"
           className="w-5 h-5 mt-1 flex-shrink-0"
           style={{
@@ -149,7 +152,7 @@ export default function SurveySection1() {
       {/* 7. Opera glasses + בחן/י את עצמך */}
       <div className="flex items-start gap-2 mt-4">
         <img
-          src="/src/assets/Opera Glasses.svg"
+          src={OperaGlasses}
           alt="Opera Glasses"
           className="w-5 h-5 mt-1 flex-shrink-0"
           style={{

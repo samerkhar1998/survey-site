@@ -1,6 +1,7 @@
 import React from "react";
 import ScoreExplanation from "./ScoreExplanation";
 import SummaryChart from "./SummaryChart";
+import MegaphoneIcon from "../../assets/megaphone 1.svg";
 
 export default function SurveySummary({ sectionAverages }) {
   return (
@@ -41,11 +42,11 @@ export default function SurveySummary({ sectionAverages }) {
       {/* Bullets after chart */}
       <div className="px-[25px] mt-4 text-right space-y-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }} dir="rtl">
         <div className="flex items-start gap-2">
-          <img src="/src/assets/megaphone 1.svg" alt="Megaphone" className="w-3 h-3 mt-1" />
+          <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
           <p>לאחר זיהוי התחומים בהם כדאי להעמיק או לשפר את היישום בפועל, תוכלו להיעזר בפרקים 2 עד 5 שלהלן המציעים כלים, עקרונות ודוגמאות שיעזרו לכם לפתח סל רווחה מגוון ומותאם תרבותית – צעד אחר צעד.</p>
         </div>
         <div className="flex items-start gap-2">
-          <img src="/src/assets/megaphone 1.svg" alt="Megaphone" className="w-3 h-3 mt-1" />
+          <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
           <p>במידה והציונים ברוב הצירים נמוכים, או אם ברצונכם לבנות תכנית עבודה שלמה ולזהות את צעדיה, מומלץ להיעזר בפרק 6, הכולל מפת דרכים בת 7 צעדים ליצירת סל רווחה מגוון ומותאם תרבותית, שיאפשר לכם לבחור נקודת התחלה ולהתקדם בצורה מדורגת וריאלית.</p>
         </div>
       </div>

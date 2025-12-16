@@ -745,7 +745,7 @@ export default function SurveySection2() {
               <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                 <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.25rem' }}><img src="/src/assets/Comments.svg" alt="Comments" style={{ width: "0.75rem", height: "0.75rem" }} /></span>
                 <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
-על הארגון והמנהלים להכיר את מנהגי האבלות של הדתות והעדות השונות, כדי לנהוג ברגישות ולמנוע מצבים מביכים. לדוגמה, מנהלים שהגיעו להלוויה של עובד ממוצא אתיופי עם גלגל אבל, מחווה שנתפסת בעדה כמנהג נוצרי ומעליב, יכלו להימנע מכך באמצעות היכרות מוקדמת עם הנורמות התרבותיות.                </p>
+על הארגון והמנהלים להכיר את מנהגי האבלות של הדתות והעדות השונות, כדי לנהוג ברגישות ולמנוע מצבים מביכים.לדוגמה, מנהלים שהגיעו להלוויה של עובד ממוצא אתיופי עם גלגל אבל, מחווה שנתפסת בעדה כמנהג נוצרי ומעליב, יכלו להימנע מכך באמצעות היכרות מוקדמת עם הנורמות התרבותיות.                </p>
               </div>
 
               
@@ -913,7 +913,7 @@ export default function SurveySection2() {
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                   <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.15rem' }}><img src="/src/assets/Comments.svg" alt="Comments" style={{ width: "0.75rem", height: "0.75rem" }} /></span>
                   <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)'}}>&nbsp;&nbsp;&nbsp;&nbsp;
-כוונת הארגון בהוקרת עובדים היא חיובית, אך הוקרה שאינה מותאמת לקודים התרבותיים עלולה לעורר מבוכה ואי-נוחות, להפוך לחוויה שלילית ולהגביר תחושת ניכור, במקום לחזק את תחושת  הבית והשייכות. </p>
+כוונת הארגון בהוקרת עובדים היא חיובית, אך הוקרה שאינה מותאמת לקודים התרבותיים עלולה לעורר מבוכה ואי-נוחות, להפוך לחוויה שלילית ולהגביר תחושת ניכור, במקום לחזק את תחושת הבית והשייכות. </p>
                 </div>
 
                 {/* הקדמה */}

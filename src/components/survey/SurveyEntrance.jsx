@@ -1,4 +1,8 @@
 import React from "react";
+import CoImpactLogo from "../../assets/CoImpact Logo.svg";
+import BannerRectangle from "../../assets/Rectangle 1.svg";
+import Title1 from "../../assets/Title1.svg";
+import CommentsIcon from "../../assets/Comments.svg";
 
 export default function SurveyEntrance({ onStart }) {
   return (
@@ -11,7 +15,7 @@ export default function SurveyEntrance({ onStart }) {
       {/* A. Logo */}
       <div className="flex justify-center">
         <img
-          src="/src/assets/CoImpact Logo.svg"
+          src={CoImpactLogo}
           alt="Co-Impact Logo"
           className="object-contain"
           style={{ width: '8.125rem', height: '2.125rem' }}
@@ -21,14 +25,14 @@ export default function SurveyEntrance({ onStart }) {
       {/* B. Banner */}
       <div className="relative mt-[20px] w-full" style={{ maxWidth: '100%', height: '3.25rem' }}>
         <img
-          src="/src/assets/Rectangle 1.svg"
+          src={BannerRectangle}
           alt="Banner"
           className="w-full h-full object-contain"
           style={{ borderTopLeftRadius: 0, borderBottomRightRadius: 0 }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src="/src/assets/Title1.svg"
+            src={Title1}
             alt="Title"
             style={{ width: "12.9375rem", height: "2rem" }}
           />
@@ -51,7 +55,7 @@ export default function SurveyEntrance({ onStart }) {
         {/* Recommendation with icon - Desktop */}
         <div className="hidden md:flex items-start gap-2 mt-4" style={{ color: '#79BF98' }}>
           <img
-            src="/src/assets/Comments.svg"
+            src={CommentsIcon}
             alt="Comments"
             className="w-4 h-4 flex-shrink-0 mt-1"
           />
@@ -64,7 +68,7 @@ export default function SurveyEntrance({ onStart }) {
         <div className="md:hidden mt-4" style={{ color: '#79BF98' }}>
           <div className="flex items-center gap-2">
             <img
-              src="/src/assets/Comments.svg"
+              src={CommentsIcon}
               alt="Comments"
               className="w-4 h-4 flex-shrink-0"
             />
@@ -97,5 +101,4 @@ export default function SurveyEntrance({ onStart }) {
     
   );
 }
-
 
