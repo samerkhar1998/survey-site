@@ -55,11 +55,11 @@ export default function SurveyEntrance({ onStart }) {
         </p>
 
         {/* Recommendation with icon - Desktop */}
-        <div className="hidden md:flex items-start gap-2 mt-4" style={{ color: '#79BF98' }}>
+        <div className="hidden md:flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
-            className="w-4 h-4 flex-shrink-0 mt-1"
+            className="w-3 h-3 mt-1"
           />
           <p className="text-right text-sm leading-relaxed" style={{ fontSize: "0.75rem" }}>
             <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
@@ -67,16 +67,12 @@ export default function SurveyEntrance({ onStart }) {
         </div>
 
         {/* Recommendation with icon - Mobile */}
-        <div className="md:hidden mt-4" style={{ color: '#79BF98' }}>
+        <div className="md:hidden mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <div className="flex items-center gap-2">
             <img
               src={CommentsIcon}
               alt="Comments"
-              className="flex-shrink-0"
-              style={{
-                width:'0.75rem',
-                height:'0.75rem'
-              }}
+              className="w-3 h-3 mt-1"
             />
             <span className="text-sm" style={{ fontSize: "0.75rem" }}>
               <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת
