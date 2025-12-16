@@ -1324,18 +1324,6 @@ export default function SurveySection2() {
                   </div>
                 </div>
 
-                {/* Footer */}
-                <div className="mt-8 py-12 text-center relative" style={{ backgroundColor: '#79BF98', width: '100vw', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
-                  <p className="text-lg font-bold mb-2" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif' }}>
-                    ניתן לפנות להתייעצות אל:
-                  </p>
-                  <p className="text-lg mb-2" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif' }}>
-                    שם היועצ/ת
-                  </p>
-                  <p className="text-3xl font-bold" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif' }}>
-                    0526489006
-                  </p>
-                </div>
               </div>
               </div>
               </div>

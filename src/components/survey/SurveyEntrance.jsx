@@ -68,17 +68,21 @@ export default function SurveyEntrance({ onStart }) {
 
         {/* Recommendation with icon - Mobile */}
         <div className="md:hidden mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
-          <div className="flex items-center gap-2">
-            <img
-              src={CommentsIcon}
-              alt="Comments"
-              className="w-3 h-3 mt-1"
-            />
-            <span className="text-sm" style={{ fontSize: "0.75rem" }}>
-              <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת
+          <p
+            className="flex items-start gap-2 text-right text-sm leading-relaxed"
+            style={{ fontSize: "0.75rem" }}
+            dir="rtl"
+          >
+            <span className="font-bold flex items-center gap-1">
+              המלצה גורפת
+              <img
+                src={CommentsIcon}
+                alt=""
+                className="w-3 h-3 flex-shrink-0"
+              />
             </span>
-          </div>
-          <p className="text-right text-sm leading-relaxed" style={{ fontSize: "0.75rem" }}>
+            – לשלב עובדים מתרבויות שונות בקבלת
+            <br />
             החלטות לגבי האירועים והפעילויות השונות
           </p>
         </div>
@@ -104,6 +108,7 @@ export default function SurveyEntrance({ onStart }) {
           <div className="absolute" style={{ backgroundColor: '#0A476D', height: '2px', left: '37px', right: '-10px', top: '0' }} />
         </div>
       </div>
+
     </div>
     
   );

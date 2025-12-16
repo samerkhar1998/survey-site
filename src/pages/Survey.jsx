@@ -3,6 +3,7 @@ import SurveyEntrance from "@/components/survey/SurveyEntrance";
 import SurveySection1 from "@/components/survey/SurveySection1";
 import SurveySection2 from "@/components/survey/SurveySection2";
 import SurveyNavigationMenu from "@/components/survey/SurveyNavigationMenu";
+import SurveyFooter from "@/components/survey/SurveyFooter";
 
 export default function Survey() {
   const handleStart = () => {
@@ -16,6 +17,7 @@ export default function Survey() {
       <SurveySection1 />
       <SurveySection2 />
       <SurveyNavigationMenu />
+      <SurveyFooter />
     </div>
   );
 }
