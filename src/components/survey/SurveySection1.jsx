@@ -49,7 +49,7 @@ export default function SurveySection1() {
   return (
     <div id="section1" className="w-[100%] max-w-[1200px] mx-auto px-[35px] pt-[20px]">
       {/* 1. Header */}
-      <p className="text-right text-sm font-bold" style={{ color: '#5B4B43', fontSize:'0.825rem' }}>
+      <p className="text-right text-sm font-bold" style={{ color: '#0A476D', fontSize:'0.875rem' }}>
         המדריך שלפניך כולל <span style={{ fontWeight: 900 }}>שישה פרקים:</span>
       </p>
 

@@ -12,17 +12,17 @@ export default function EventPlanningCard({ title, sections }) {
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-lg font-bold mb-6" style={{ lineHeight:'0.9375rem',color: '#0A476D', fontFamily: 'FbScorpion, sans-serif', fontSize:'0.875rem' }}>
+      <h3 className="text-right text-lg font-bold mb-6" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem'  }}>
         {title}
       </h3>
 
       {/* Sections */}
       {sections.map((section, index) => (
         <div key={index} className={index > 0 ? 'mt-3' : ''}>
-          <p className="text-right font-bold mb-2" style={{ color: '#79BF98', fontSize: '0.75rem', fontFamily: 'FbScorpion, sans-serif', lineHeight:'0.9375rem' }}>
+          <p className="text-right font-bold mb-2" style={{ color: '#79BF98', fontSize: '0.75rem',  lineHeight:'0.9375rem' }}>
             {section.label}
           </p>
-          <ul className="text-right text-sm list-disc list-inside space-y-2" style={{ lineHeight:'0.9375rem',color: '#5B4B43', fontFamily: 'FbScorpion, sans-serif', fontSize:'0.75rem' }} dir="rtl">
+          <ul className="text-right text-sm list-disc list-inside space-y-2" style={{ lineHeight:'0.9375rem',color: '#5B4B43', fontSize:'0.75rem' }} dir="rtl">
             {section.items.map((item, i) => (
               <li key={i}>{item}</li>
             ))}

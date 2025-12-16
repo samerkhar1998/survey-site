@@ -145,7 +145,7 @@ export default function SurveySection2() {
         </CardCarousel>
       </div>
 
-      <div style={{ color: '#5B4B43',fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}>ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים</div>
+      {/* <div style={{ color: '#5B4B43',fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}>ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים</div> */}
 
       {/* Blue line with dot */}
       <div className="mt-8 -mx-[25px]">

@@ -45,7 +45,7 @@ export default function SurveyEntrance({ onStart }) {
           className="text-right leading-relaxed text-sm"
           style={{ color: '#5B4B43' }}
         >
-          <span className="font-bold" style={{ color: "#5B4B43", fontSize: "0.875rem" }}>סל רווחה מותאם תרבותית – </span><span className="font-black" style={{ color: "#5B4B43", fontSize: "0.875rem" }}>למה כדאי?</span>
+          <span className="font-bold" style={{ color: "#0A476D", fontSize: "0.875rem" }}>סל רווחה מותאם תרבותית – </span><span className="font-black" style={{ color: "#0A476D", fontSize: "0.875rem" }}>למה כדאי?</span>
           <br />
           <div style={{marginBottom: '5px', fontSize: '0.75rem'}}> בחברות רבות קיימת עדיין תפיסה של One Size Fits All בתחום הרווחה הארגונית. אולם בפועל, לעובדים שונים יש צרכים מגוונים, נקודות מבט שונות, ותגובות רגשיות שונות לאותם גירויים או יוזמות.</div>
           

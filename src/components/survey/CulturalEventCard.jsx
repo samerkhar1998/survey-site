@@ -7,12 +7,11 @@ export default function CulturalEventCard({ title, subtitle, purpose, responsibl
       style={{
         backgroundColor: 'rgba(121, 191, 152, 0.1)',
         width: '340px',
-        minHeight: '283px',
-        fontFamily: 'Inter, sans-serif'
+        minHeight: '283px'
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-lg font-black mb-4" style={{ color: '#0A476D', fontSize:'0.75rem', lineHeight:'0.9375rem', fontWeight:'900' }}>
+      <h3 className="text-right text-base font-black mb-4" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem' }}>
         {title}
       </h3>
 

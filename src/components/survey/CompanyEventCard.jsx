@@ -12,7 +12,7 @@ export default function CompanyEventCard({ title, goal, highlights, eventType })
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-base font-bold mb-4" style={{ color: '#0A476D', fontSize:'0.875rem', fontWeight:'700' }}>
+      <h3 className="text-right text-base font-bold mb-4" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem'  }}>
         {title}
       </h3>
 
