@@ -70,7 +70,11 @@ export default function SurveyEntrance({ onStart }) {
             <img
               src={CommentsIcon}
               alt="Comments"
-              className="w-4 h-4 flex-shrink-0"
+              className="flex-shrink-0"
+              style={{
+                width:'0.75rem',
+                height:'0.75rem'
+              }}
             />
             <span className="text-sm" style={{ fontSize: "0.75rem" }}>
               <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת
