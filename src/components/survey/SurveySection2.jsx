@@ -262,9 +262,19 @@ export default function SurveySection2() {
         </div>
 
         <div className="flex items-start gap-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400'}}>
-          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.25rem)' }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
+          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt" /></span>
+          <p
+            className="text-right text-sm leading-relaxed"
+            style={{
+              color: '#0A476D',
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '0.75rem',
+              transform: 'translateX(25px)',
+              textIndent: '1.25rem',
+              // paddingRight: '1.25rem'
+            }}
+          >
+            מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
           </p>
         </div>
 
