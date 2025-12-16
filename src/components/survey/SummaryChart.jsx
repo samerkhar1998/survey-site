@@ -138,7 +138,7 @@ export default function SummaryChart({ sectionAverages }) {
           return (
             <g key={item.name}>
               <rect
-                x={x}
+                x={x+10}
                 y={yAxisTop}
                 width={BAR_WIDTH}
                 height={MAX_BAR_HEIGHT}
@@ -146,33 +146,39 @@ export default function SummaryChart({ sectionAverages }) {
                 // rx={4}
               />
               <rect
-                x={x}
+                x={x+10}
                 y={y}
                 width={BAR_WIDTH}
                 height={height}
                 fill={getBarColor(item.value)}
                 
               />
-              <text
-                x={x + BAR_WIDTH / 2}
-                y={yAxisBottom + 10}
-                fill="#79BF98"
-                fontSize={remToPx(0.5)}
-                lineHeight={remToPx(0.5625)}
-                textAnchor="middle"
+              <foreignObject
+                x={x + BAR_WIDTH / 2 - remToPx(1.48603)}
+                y={yAxisBottom + 4}
+                width={remToPx(4)}
+                height={remToPx(3.8315)}
               >
-                {item.name.split(" ").map((word, idx) => (
-                  <tspan
-                    key={`${item.name}-${idx}`}
-                    x={x + BAR_WIDTH / 2}
-                    dy={idx === 0 ? 0 : remToPx(0.5625)}
-                  >
-                    {word}
-                  </tspan>
-                ))}
-              </text>
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    textAlign: "center",
+                    fontSize: "0.5rem",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "0.5625rem",
+                    color: "#79BF98",
+                    direction: "rtl",
+                  }}
+                >
+                  {item.name.split(" ").map((word) => (
+                    <span key={`${item.name}-${word}`}>{word}&ensp;</span>
+                  ))}
+                </div>
+              </foreignObject>
               <text
-                x={x + BAR_WIDTH / 2}
+                x={x + 10 + BAR_WIDTH / 2}
                 y={y - 5}
                 fill="#79BF98"
                 fontSize={remToPx(0.5)}
