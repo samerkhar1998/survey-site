@@ -367,7 +367,7 @@ export default function SurveySection2() {
 
         {/* עקרונות מנחים */}
         <p className="text-right text-sm font-bold mt-6" style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'0.9375rem', fontWeight:'700' }}>
-          עקרונות מנחים לאירועי חברה/ צוות עבודה/ אירוע מצומצם:
+          עקרונות מנחים לאירועי חברה / צוות עבודה / אירוע מצומצם:
         </p>
 
         {/* Company Event Cards Carousel */}
