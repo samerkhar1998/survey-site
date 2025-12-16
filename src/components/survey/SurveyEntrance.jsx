@@ -68,6 +68,11 @@ export default function SurveyEntrance({ onStart }) {
 
         {/* Recommendation with icon - Mobile */}
         <div className="md:hidden mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+          <img
+                src={CommentsIcon}
+                alt=""
+                className="w-3 h-3 flex-shrink-0"
+              />
           <p
             className="flex items-start gap-2 text-right text-sm leading-relaxed"
             style={{ fontSize: "0.75rem" }}
@@ -75,11 +80,7 @@ export default function SurveyEntrance({ onStart }) {
           >
             <span className="font-bold flex items-center gap-1">
               המלצה גורפת
-              <img
-                src={CommentsIcon}
-                alt=""
-                className="w-3 h-3 flex-shrink-0"
-              />
+              
             </span>
             – לשלב עובדים מתרבויות שונות בקבלת
             <br />

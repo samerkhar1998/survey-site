@@ -114,10 +114,10 @@ export default function SurveySection1() {
           className="text-right text-sm leading-relaxed"
           style={{
             color: '#5B4B43',
-            transform: 'translateX(25px)',
+            
           }}
         >
-          <span className="font-bold" style={{fontSize: '0.825rem'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;מטרת הפרק: </span> 
+          <span className="font-bold" style={{fontSize: '0.825rem'}}>מטרת הפרק: </span> 
           <span className="fonr-normal" style={{fontSize: '0.75rem'}}>להזמין אותך — נציג.ת מש"א, רווחה או גורם מוביל בתחום להתבוננות פנימית על סל הרווחה הקיים בארגון, ובחינה באיזו מידה הוא מגלם עקרונות של סובלנות, הוגנות והכלה תרבותית.</span>
 
           <div style={{marginTop: '5px', fontSize: '0.75rem' }}>המטרה היא לא לשפוט, אלא להבין את נקודת הפתיחה של הארגון, לזהות חוזקות, פערים והזדמנויות לשיפור.</div>

@@ -50,7 +50,7 @@ export default function SurveySection2() {
             height:'1.0625rem'
           }}
         />
-        <div className="text-right text-sm leading-relaxed" style={{ marginTop:'2px',color: '#5B4B43', fontSize:'0.75rem', transform:'translateX(1.5rem)' }}>
+        <div className="text-right text-sm leading-relaxed" style={{ marginTop:'2px',color: '#5B4B43', fontSize:'0.75rem'}}>
           <p>
             <span className="font-bold" style={{marginRight:'1.25rem'}}> מטרת הפרק:</span> לחזק את תחושת השייכות של העובדים (הערבים וכלל האוכלוסיות) לארגון, לתרבות הארגונית ולמרחב המשותף, באמצעות ציון חגים וימים משמעותיים באופן מכבד, הוגן סובלני, מגוון ומותאם תרבותית.
           </p>
@@ -88,8 +88,12 @@ export default function SurveySection2() {
       </div>
 
       {/* Bottom recommendation */}
-      <div className="flex items-start gap-2 mt-6" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
-        <span style={{ fontSize: '0.75rem', marginTop:'0.3rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
+      <div className="flex items-start gap-2 mt-[5px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <img
+          src={CommentsIcon}
+          alt="Comments"
+          style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
+        />
         <p className="text-right text-sm leading-relaxed">
           <span style={{
             fontSize:'0.75rem',
@@ -253,26 +257,38 @@ export default function SurveySection2() {
       </div>
 
       {/* Additional recommendations after cards */}
-      <div className="mt-6 space-y-4">
-        <div className="flex items-start gap-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
-          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.25rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.25rem)' }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;בעת תכנון פעילות לחג, יש לערב לכך נציגות מש"א והרווחה, גם מנהלים מצוותים מגוונים, ועובדים שחוגגים את החג, במטרה לחזק את תחושת השייכות של העובדים לארגון ולקבל מהם הערות וטיפים.
+      <div className="mt-[5px] space-y-[5px]">
+        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontSize:'0.75rem'  }}>
+                בעת תכנון פעילות לחג, יש לערב לכך נציגות מש"א והרווחה, גם מנהלים מצוותים מגוונים, ועובדים שחוגגים את החג, במטרה לחזק את תחושת השייכות של העובדים לארגון ולקבל מהם הערות וטיפים.
           </p>
         </div>
 
-        <div className="flex items-start gap-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400'}}>
+        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400'}}>
           
-          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.25rem)' }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem'  }}>
+                מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
           </p>
         </div>
 
-        <div className="flex items-start gap-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
-          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.25rem)' }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;חשוב לתכנן את החופשות בהתאם ללוחות החגים של העובדים השונים, כך שתתאפשר להם מנוחה וחגיגה בהתאם למסורתם ותרבותם, ותישמר תחושת ההתחשבות והשוויון בארגון.
+        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem'  }}>
+                חשוב לתכנן את החופשות בהתאם ללוחות החגים של העובדים השונים, כך שתתאפשר להם מנוחה וחגיגה בהתאם למסורתם ותרבותם, ותישמר תחושת ההתחשבות והשוויון בארגון.
           </p>
         </div>
       </div>
@@ -314,27 +330,40 @@ export default function SurveySection2() {
             alt="Accuracy"
             className="w-5 h-5 flex-shrink-0"
           />
-          <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-            <span className="font-bold">   &ensp;&ensp;&ensp;  מטרת הפרק:</span> לטפח חיבור חברתי, שיתוף פעולה "גאוות יחידה" בין העובדים, ובמקביל לחזק את הזהות הארגונית באמצעות אירועי חברה ופעילויות גיבוש מגוונות. המתוכננות בקרישות תרבותית ובאופן שמאפשר לכל עובד ועובדת להשתתף ולהרגיש חלק מהחוויה המשותפת, לחזק את היכרות האישית ולעודד שיתוף פעולה ותחושת מחויבות הדדית בין העובדים לארגון.
+          <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontSize:'0.75rem' }}>
+            <span className="font-bold">מטרת הפרק:</span> לטפח חיבור חברתי, שיתוף פעולה "גאוות יחידה" בין העובדים, ובמקביל לחזק את הזהות הארגונית באמצעות אירועי חברה ופעילויות גיבוש מגוונות. המתוכננות בקרישות תרבותית ובאופן שמאפשר לכל עובד ועובדת להשתתף ולהרגיש חלק מהחוויה המשותפת, לחזק את היכרות האישית ולעודד שיתוף פעולה ותחושת מחויבות הדדית בין העובדים לארגון.
           </div>
         </div>
 
         {/* Bullets */}
-        <div className="mt-6 space-y-4">
-          <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-            <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-            <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.5rem)' }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-  אירועי צוות ואירועי חברה הם מרכיב מרכזי בתרבות הארגונית, אך מטרותיהם שונות ומשלימות: השילוב ביניהם מטפח גם לכידות פנים - צוותית וגם שייכות ארגונית רחבה.          </p>
-          </div>
+        <div className="flex items-start gap-2 mt-[5px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed">
+            <span style={{
+              fontSize:'0.75rem',
+              fontWeight:'400'
+            }}>אירועי צוות ואירועי חברה הם מרכיב מרכזי בתרבות הארגונית, אך מטרותיהם שונות ומשלימות: השילוב ביניהם מטפח גם לכידות פנים - צוותית וגם שייכות ארגונית רחבה.</span>
+          </p>
+        </div>  
 
-          <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-          <span style={{ fontSize: '0.75rem',width: "3.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1"/></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem', transform: 'translateX(1.35rem)' }}>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-אירוע צוות מוצלח הוא תוצאה של עבודת גיבוש והכנה מוקדמת- הבנת הצרכים, שיתוף בתכנון ויצירת תנאים המאפשרים השתתפות נוחה לכל העובדים, ובכך מחזק היכרות, אמון ושיתוף פעולה. לעומתו, אירוע חברה מחזק זהות ארגונית, תחושת קהילה ו"גאוות יחידה" באמצעות חוויה רחבה ורגישה תרבותית.            </p>
-          </div>
-        </div>
+        <div className="flex items-start gap-2 mt-[5px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed">
+            <span style={{
+              fontSize:'0.75rem',
+              fontWeight:'400'
+            }}>אירוע צוות מוצלח הוא תוצאה של עבודת גיבוש והכנה מוקדמת- הבנת הצרכים, שיתוף בתכנון ויצירת תנאים המאפשרים השתתפות נוחה לכל העובדים, ובכך מחזק היכרות, אמון ושיתוף פעולה. לעומתו, אירוע חברה מחזק זהות ארגונית, תחושת קהילה ו"גאוות יחידה" באמצעות חוויה רחבה ורגישה תרבותית.</span>
+          </p>
+        </div>  
+
 
         {/* עקרונות מנחים */}
         <p className="text-right text-sm font-bold mt-6" style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'0.9375rem', fontWeight:'700' }}>
@@ -396,15 +425,23 @@ export default function SurveySection2() {
 
         {/* Additional recommendations after cards */}
         <div className="mt-6 space-y-4" style={{marginTop:'0px'}}>
-          <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-          <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.5rem)' }}>&nbsp;&nbsp;&nbsp;
- כאשר הנהלה חוזרת על מסרים מגבשים של סובלנות והוגנות בעקביות, הם מחלחלים כלפי מטה ומסייעים לעצב תרבות ארגונית סובלנית ומחבקת.          </p>
+        <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem'  }}>   
+ כאשר הנהלה חוזרת על מסרים מגבשים של סובלנות והוגנות בעקביות, הם מחלחלים כלפי מטה ומסייעים לעצב תרבות ארגונית סובלנית ומחבקת.</p>
         </div>
 
           <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-          <span style={{ fontSize: '0.75rem',width: "3.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1"/></span>
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
+          <img
+            src={CommentsIcon}
+            alt="Comments"
+            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
+          />
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>    
 מומלץ לנהל שיח פתוח עם עובדים מהחברה הערבית בעת תכנון האירוע, כדי להבין צרכים ומגבלות            (זמנים, מיקום, אוכל, אופי הפעילות) ולתאם ציפיות מראש. חשוב להבהיר כי ייתכן שהאירוע לא יתאים במלואו לכל צורך, אך נעשה מאמץ למצוא פתרונות מותאמים וכי השתתפות כלל חברי הצוות משמעותית להצלחת האירוע לעצם ההשתדלות יש ערך רב.          </p>
           </div>
         </div>
@@ -431,11 +468,11 @@ export default function SurveySection2() {
 
           {/* Content box */}
           <div className="px-[25px] py-6 pb-0">
-            <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+            <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
               תכנון שאינו מתחשב במאפייני האוכלוסיות עלול להביא לתחושת הדרה או לפגיעה בשייכות לחברה ואף לתוצאה ההפוכה מהכוונה של המארגנים. למשל:
             </p>
 
-            <ul className="text-right text-sm list-disc list-inside mt-3 space-y-2" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }} dir="rtl">
+            <ul className="text-right text-sm list-disc list-inside mt-3 space-y-2" style={{ color: '#0A476D',   fontSize:'0.75rem' }} dir="rtl">
               <li>
                 חברה שקיימה אירוע חברה באילת במהלך חודש רמדאן, לא אפשר השתתפות העובדים המוסלמים.
               </li>
@@ -444,7 +481,7 @@ export default function SurveySection2() {
               </li>
             </ul>
 
-            <p className="text-right text-sm font-bold mt-4" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+            <p className="text-right text-sm font-bold mt-4" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
               דוגמאות ופרקטיקה לשימוש בעת תכנון אירועים:
             </p>
             </div>
@@ -580,20 +617,24 @@ export default function SurveySection2() {
                   alt="Accuracy"
                   className="w-5 h-5 flex-shrink-0"
                 />
-                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-                  <span className="font-bold">  &nbsp;&nbsp;&nbsp;&nbsp;   מטרת הפרק:</span>
+                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontSize:'0.75rem' }}>
+                  <span className="font-bold">         מטרת הפרק:</span>
 לחזק את תחושת השייכות, ההערכה והאנושיות כלפי העובדים באמצעות התייחסות רגישה ומותאמת תרבותית לאירועים המרכזיים בחייהם ובחיי משפחתם, כך שכל עובד יחוש כי הארגון רואה אותו כאדם שלם, עם עולם אישי וקהילתי ולא רק כעובד. בפרט, לעובדים מהחברה הערבית יש ייחודיות וקודים תרבותיים חשובים, שהבנתם והכרה בהם על ידי הארגון חיונית לחיזוק תחושת המחוברות והגאווה שלהם כלפי מקום העבודה.                </div>
               </div>
 
               {/* Green paragraph */}
               <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.15rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img
+                  src={CommentsIcon}
+                  alt="Comments"
+                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
+                />
+                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>    
       להבנה זו חשיבות מיוחדת עבור עובדים מהחברה הערבית, המאופיינת בתרבות קולקטיביסטית, שבה תחושת הכלל            (המשפחה) והמעמד של העובד בעיני סביבתו משפיעים באופן ישיר על תחושת המחוברות והגאווה שלו כלפי היותו חלק ממקום עבודה מסוים, ובסופו של דבר גם על שימורו בארגון.</p>
               </div>
 
               {/* הקדמה */}
-              <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+              <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                 <span className="font-bold">הקדמה:</span> אירועים בחיי העובד מהווים נקודות מגע חשובות במיוחד בין הארגון לאדם – רגעים של שמחה, שינוי או קושי, שבהם ניתן לבטא תשומת לב אנושית ומכבדת. התייחסות כזו מעצימה את תחושת ההוגנות והערבות ההדדית בארגון, והיא חלק מתרבות ארגונית רואה, מחבקת ומכבדת.
                 <div className="mt-[5px]">
                 על מנת להבטיח תחושת שוויון והכלה, מומלץ ליצור איזון והתאמה בין מספר וסוגי האירועים הזוכים להתייחסות. כך למשל, אם הארגון נוהג לציין אירועי חיים דתיים יהודיים (כגון בר מצווה או ברית), ניתן לייצר הקבלה והתייחסות לאירועים דומים בקרב בני דתות אחרות. האיזון הזה מאפשר לעובדים מכלל התרבויות לחוש כי הארגון רואה בהם ובמשפחותיהם שווים, ומכבד את נקודות הציון הייחודיות בתרבותם.
@@ -602,14 +643,14 @@ export default function SurveySection2() {
 
               {/* Example box */}
               <div className="mt-6  mx-[-25px] px-[25px] py-4" style={{ backgroundColor: 'rgba(10, 71, 109, 0.1)'}}>
-                <p className="text-right text-sm leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontSize:'0.75rem'}}>
+                <p className="text-right text-sm leading-relaxed" style={{   fontSize:'0.75rem'}}>
                   <span className="font-bold" style={{ color: '#79BF98' }}>לדוגמה:</span>
                   <span style={{ color: '#5B4B43' }}> האירוע המקביל לבר מצווה יכול להיות המעבר מבית הספר היסודי לחטיבת הביניים — שלב חיים משמעותי לילד ולמשפחתו.</span>
                 </p>
               </div>
 
               {/* Table intro */}
-              <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+              <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
                 טבלת אירועי חיים בדתות השונות, הטבלה שלהלן מציגה את עיקרי אירועי החיים המרכזיים בדתות השונות ומאפייניהם, ומטרתה לסייע באופן ההתייחסות ובזיהוי נקודות דמיון / יצירת הקבלה בין אירועים דתיים ואישיים במעגל חיי העובד והמשפחה בתרבויות השונות.
               </div>
 
@@ -756,8 +797,12 @@ export default function SurveySection2() {
 
               {/* Additional note after cards */}
               <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.25rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img
+                  src={CommentsIcon}
+                  alt="Comments"
+                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
+                />
+                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>    
 על הארגון והמנהלים להכיר את מנהגי האבלות של הדתות והעדות השונות, כדי לנהוג ברגישות ולמנוע מצבים מביכים.לדוגמה, מנהלים שהגיעו להלוויה של עובד ממוצא אתיופי עם גלגל אבל, מחווה שנתפסת בעדה כמנהג נוצרי ומעליב, יכלו להימנע מכך באמצעות היכרות מוקדמת עם הנורמות התרבותיות.                </p>
               </div>
 
@@ -783,7 +828,7 @@ export default function SurveySection2() {
 
                 {/* Text below line */}
                 <div className="px-[25px] pt-6">
-                  <p className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                  <p className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                     הרחבה על ההבדלים בנושא האבל בדעות השונות בחברה הערבית:
                   </p>
                 </div>
@@ -880,17 +925,21 @@ export default function SurveySection2() {
 
               {/* רגעי משבר משפחתיים */}
               <div className="mt-[10px]">
-                <p className="text-right text-sm font-bold" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                <p className="text-right text-sm font-bold" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
                   רגעי משבר משפחתיים:
                 </p>
 
-                <p className="text-right text-sm leading-relaxed mt-3" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                <p className="text-right text-sm leading-relaxed mt-3" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
                   באופן כללי, עובדים ממעמד סוציו-אקונומי נמוך נתקלים בשיעורים יותר גבוהים במשברים אישיים ומשפחתיים כגון קשיים ככלכליים, שיקולים, גירושין או מצבי אלימות. חשוב שהארגון יכיר בכך, יכיר את המציאות (למשל תקופות של אלימות נרחבת יותר) ויספק ברגישות, ייצע תמיכה מותאמת וישמור על כבוד ופרטיותו של העובד.
                 </p>
 
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.25rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1"/></span>
-                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.9rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img
+                  src={CommentsIcon}
+                  alt="Comments"
+                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
+                />
+                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>    
 בחברות בהן שיעור גדול יחסית של עובדים מאוכלוסיות רווחה, מומלץ לשלב במקום העבודה עו״ס שמכיר את כלל האוכלוסיות, לטיפול וסיוע.      </p>
               </div>
               </div>
@@ -921,25 +970,29 @@ export default function SurveySection2() {
                   alt="Accuracy"
                   className="w-5 h-5 flex-shrink-0"
                 />
-                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-                  <span className="font-bold">&nbsp;&nbsp;&nbsp;&nbsp;  מטרת הפרק: </span>
+                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontSize:'0.75rem' }}>
+                  <span className="font-bold">      מטרת הפרק: </span>
   לטפח תחושת שייכות, מחוברות והוקרה בקרב כלל העובדים, תוך ציון רגעי מפתח משמעותיים בקריירה באופן שוויוני, מכבד ורגיש תרבותית, המחזק את תחושת הערך של כל עובד באופן מותאם במרחב הארגוני.</div>
               </div>
 
                 {/* Green bullet */}
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                  <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.15rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-                  <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)'}}>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img
+                    src={CommentsIcon}
+                    alt="Comments"
+                    style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
+                  />
+                  <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem'}}>    
 כוונת הארגון בהוקרת עובדים היא חיובית, אך הוקרה שאינה מותאמת לקודים התרבותיים עלולה לעורר מבוכה ואי-נוחות, להפוך לחוויה שלילית ולהגביר תחושת ניכור, במקום לחזק את תחושת הבית והשייכות. </p>
                 </div>
 
                 {/* הקדמה */}
-                <div className="text-right text-sm leading-relaxed mt-[5px]" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                <div className="text-right text-sm leading-relaxed mt-[5px]" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                   <span className="font-bold">הקדמה:</span> ציון דרך בקריירה הוא חלק חשוב ממסע העובד בארגון, הרגעים המשמעותיים – החל מיום הראשון בעבודה, דרך קידום, קידום, ותק ועד לפרידה – הם נקודות מפתח לביטוי הערכה ולחיזוק המחוברות הארגונית. כאשר ארגון מקפיד לציין אירועים אלה בצורה שוויונית ורגישה, הוא מעביר מסר ברור של כבוד לכל עובד באשר הוא, ומחזק את תחושת "כולנו חלק מהארגון". בתרבות מגוונת, לציון כזה יש משמעות כפולה – הוא מאפשר לכל עובד לראות את עצמו כחלק מהסיפור הארגוני, ומדגיש את הערכים של הכלה, הוקרה וזיווג אנושי.
                 </div>
 
                 {/* Blue heading */}
-                <p className="text-right text-sm font-bold mt-6" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:"0.75rem" }}>
+                <p className="text-right text-sm font-bold mt-6" style={{ color: '#0A476D',   fontSize:"0.75rem" }}>
                   דוגמאות ופרקטיקה לשימוש בעת תכנון אירועי ציון דרך בקריירה של עובד מהחברה הערבית:
                 </p>
 
@@ -1058,8 +1111,12 @@ export default function SurveySection2() {
 
                 {/* Green bullet recommendation */}
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.15rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem',transform: 'translateX(1.25rem)' }}>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img
+                  src={CommentsIcon}
+                  alt="Comments"
+                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
+                />
+                <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>    
 בעת השתתפות עובד מהחברה הערבית בתכנית "חבר מביא חבר", מומלץ שהתגמול יתאים לציפיות ולמאפייני כלל העובדים. אפשר לתת מענק כספי, שוברים או תעודת הוקרה, כדי לחזק מעורבות קהילתית ולעודד גיוס מגוון.</p>
               </div>
 
@@ -1092,18 +1149,18 @@ export default function SurveySection2() {
                   alt="Accuracy"
                   className="w-5 h-5 flex-shrink-0"
                 />
-                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif',transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-                  <span className="font-bold" style={{}}>  &ensp;&ensp;&ensp; מטרת הפרק: </span>
+                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
+                  <span className="font-bold" style={{}}>מטרת הפרק: </span>
  לספק מפת דרכים סדורה בת 7 צעדים, ליצירת סל רווחה מגוון ומותאם תרבותית. הפרק מאפשר לארגון לבחור את נקודת ההתחלה הרלוונטית עבורו, בהתאם למצבו הנוכחי, ולפעול בצורה מדורגת, ריאלית ומותאמת לקצבו הפנימי.</div>
               </div>
 
                 {/* הקדמה */}
-                <div className="text-right text-sm leading-relaxed mt-[5px]" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                <div className="text-right text-sm leading-relaxed mt-[5px]" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                   <span className="font-bold">הקדמה:</span> התאמה תרבותית של סל הרווחה הארגוני יכול גם להיות פרויקט רוחבי בארגון, שעצם קיומו ואופן ביצועו מעבירים מסרים לגבי התפיסה הארגונית של סובלנות והוגנות. הפרויקט יכול להיות תהליך מובנה עם תכנית עבודה, יעדים, מדיניות, מיקוד ופעולות שטח, מחויבות ניהולית, Owner לתכלול ויישום ואחראים ייעודיים ללווי תהליך ההתאמה, בחירת אתר יישום ראשוני (בארגון גדול ומבוזר) וכיו"ב. 
                 </div>
 
                 {/* Additional intro paragraph */}
-                <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:"0.75rem" }}>
+                <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#0A476D',   fontSize:"0.75rem" }}>
                   להלן <span className="font-bold">מדריך להתאמת טל הרווחה הארגוני יישומו (7 צעדים)</span>. ניתן להשתמש רק בחלק מהצעדים – אם צעד מסוים כבר מיושם בארגון, ניתן לדלג לצעד הבא.
                 </div>
 
@@ -1290,8 +1347,12 @@ export default function SurveySection2() {
 
                 {/* Final recommendation */}
                 <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-                  <span style={{ fontSize: '0.75rem',width: "2.75rem", height: "2.75rem", marginTop:'0.35rem' }}><img src={CommentsIcon} alt="Comments" className="w-3 h-3 mt-1" /></span>
-                  <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                  <img
+                    src={CommentsIcon}
+                    alt="Comments"
+                    style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
+                  />
+                  <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem' }}>
                     בכל שלב ניתן ומומלץ להתייעץ עם צוות קו אימפקט להצעות ותכנון הפעילויות והרעיונות.</p>
                 </div>
 
@@ -1302,26 +1363,23 @@ export default function SurveySection2() {
 
                 {/* Summary and Closing */}
                 <div id="summary" className="mt-[10px]">
-                  <h2 className="text-right text-2xl font-bold mb-[5px]" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.9375rem' }}>
+                  <h2 className="text-right text-2xl font-bold mb-[5px]" style={{ color: '#0A476D',   fontSize:'0.9375rem' }}>
                     סיכום ודברי סיום
                   </h2>
 
-                  <div className="text-right text-sm leading-relaxed space-y-4" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
+                  <div className="text-right text-sm leading-relaxed space-y-4" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                     <p>
-                      קיט זה נבנה כדי לספק לכם כלים מעשיים, יישומיים ומכווּנים להתמודדות עם נושאי סובלנות והוגנות בארגון. הוא כולל הנחיות, רעיונות לפעולה ודוגמאות שיישמו לכם להטמיע את הערכים הללו בכלב התרבות הארגונית ובשגרת העבודה היומיומית ואַתן מאמינים כי הוא יכול להועיל לכם.
-                    </p>
+קיט זה נבנה כדי לספק לכם כלים מעשיים, ישימים ומכוונים להתמודדות עם נושאי סובלנות והוגנות בארגון. הוא כולל הנחיות, רעיונות לפעולה ודוגמאות שיסייעו לכם להטמיע את הערכים הללו בלב התרבות הארגונית ובשגרת העבודה היומיומית ואנו מאמינים כי הוא יכול להועיל לכם.                    </p>
 
                     <p>
-                      חשוב לזכור כי מדיניות ארגונית ברורה בנושא סובלנות והוגנות, יחד עם אמירות עקביות של הנהלת הארגון, מתכלות משנה ומשפיעות על העובדים עד שהן הופכות לחלק בלתי נפרד מתמציאות הארגונית, עובדה זו ממחישה עד כמה הנושא חשוב ומרכזי להצלחת הארגון ולחוסנו האנושי.
-                    </p>
+חשוב לזכור כי מדיניות ארגונית ברורה בנושא סובלנות והוגנות, יחד עם אמירות עקביות של הנהלת הארגון, מחלחלות מטה ומשפיעות על העובדים עד שהן הופכות לחלק בלתי נפרד מהמציאות הארגונית. עובדה זו ממחישה עד כמה הנושא חשוב ומרכזי להצלחת הארגון ולחוסנו האנושי.                    </p>
 
                     <p>
-                      <span className="font-bold">צוות קו אימפקט עומד לרשותכם בכל שאלה, ייעוץ או לייעוץ נוסף, לשים, לתכנון פעולות, או לחשיבה משותפת על התאמת הכלים והפרקטיקות לצרכים הייחודיים של הארגון שלכם.</span>
+                      <span className="font-bold">צוות קו אימפקט עומד לרשותכם בכל שאלה, ייעוץ או ליווי נוסף, לשיח, לתכנון פעולות, או לחשיבה משותפת על התאמת הכלים והפרקטיקות לצרכים הייחודיים של הארגון שלכם.</span>
                     </p>
 
                     <p className="font-bold">
-                      יחד נוכל לספור את ערכי הסובלנות והוגנות  ממילים יפות, למציאות חיה ונגשמת בכל יום עבודה.
-                    </p>
+יחד נוכל להפוך את ערכי הסובלנות וההוגנות  ממילים יפות, למציאות חיה ונושמת בכל יום עבודה.</p>
                   </div>
                 </div>
 
