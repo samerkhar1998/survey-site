@@ -143,7 +143,7 @@ export default function SummaryChart({ sectionAverages }) {
                 width={BAR_WIDTH}
                 height={MAX_BAR_HEIGHT}
                 fill="#D9D9D94D"
-                rx={4}
+                // rx={4}
               />
               <rect
                 x={x}
@@ -151,7 +151,7 @@ export default function SummaryChart({ sectionAverages }) {
                 width={BAR_WIDTH}
                 height={height}
                 fill={getBarColor(item.value)}
-                rx={4}
+                
               />
               <text
                 x={x + BAR_WIDTH / 2}

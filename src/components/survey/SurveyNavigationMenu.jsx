@@ -5,12 +5,12 @@ export default function SurveyNavigationMenu() {
 
   const menuItems = [
     { id: "intro", label: "מקדמה", bold: true },
-    { id: "section1", label: "פרק 1: בחן את עצמך" },
-    { id: "section2", label: "פרק 2: חגים ומועדים משמעותיים" },
-    { id: "section3", label: "פרק 3: אירועי חברה וגיבוש צוות" },
-    { id: "section4", label: "פרק 4: אירועים אישיים בחיי העובד.ת" },
-    { id: "section5", label: "פרק 5: ציון דרך בקריירה" },
-    { id: "section6", label: "פרק 6: מפת דרכים ליצירת סל רווחה ארגוני מותאם תרבותית" },
+    { id: "section1", label: "פרק 1" },
+    { id: "section2", label: "פרק 2" },
+    { id: "section3", label: "פרק 3" },
+    { id: "section4", label: "פרק 4" },
+    { id: "section5", label: "פרק 5" },
+    { id: "section6", label: "פרק 6" },
     { id: "summary", label: "סיכום" }
   ];
 
@@ -38,7 +38,7 @@ export default function SurveyNavigationMenu() {
                 style={{ 
                   color: '#0A476D',
                   fontFamily: 'Inter, sans-serif',
-                  fontWeight: item.bold ? 'bold' : 'normal',
+                  fontWeight: 'normal',
                   fontSize: '16px'
                 }}
               >

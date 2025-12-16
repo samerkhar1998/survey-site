@@ -870,7 +870,7 @@ export default function SurveySection2() {
                   רגעי משבר משפחתיים:
                 </p>
 
-                <p className="text-right text-sm leading-relaxed mt-3" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif' }}>
+                <p className="text-right text-sm leading-relaxed mt-3" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.75rem' }}>
                   באופן כללי, עובדים ממעמד סוציו-אקונומי נמוך נתקלים בשיעורים יותר גבוהים במשברים אישיים ומשפחתיים כגון קשיים ככלכליים, שיקולים, גירושין או מצבי אלימות. חשוב שהארגון יכיר בכך, יכיר את המציאות (למשל תקופות של אלימות נרחבת יותר) ויספק ברגישות, ייצע תמיכה מותאמת וישמור על כבוד ופרטיותו של העובד.
                 </p>
 
@@ -908,8 +908,8 @@ export default function SurveySection2() {
                   className="w-5 h-5 flex-shrink-0"
                 />
                 <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-                  <span className="font-bold">   &nbsp;&nbsp;&nbsp;  מטרת הפרק:</span>
-מטרת הפרק: לטפח תחושת שייכות, מחוברות והוקרה בקרב כלל העובדים, תוך ציון רגעי מפתח משמעותיים בקריירה באופן שוויוני, מכבד ורגיש תרבותית, המחזק את תחושת הערך של כל עובד באופן מותאם במרחב הארגוני.</div>
+                  <span className="font-bold">&nbsp;&nbsp;&nbsp;&nbsp;  מטרת הפרק: </span>
+  לטפח תחושת שייכות, מחוברות והוקרה בקרב כלל העובדים, תוך ציון רגעי מפתח משמעותיים בקריירה באופן שוויוני, מכבד ורגיש תרבותית, המחזק את תחושת הערך של כל עובד באופן מותאם במרחב הארגוני.</div>
               </div>
 
                 {/* Green bullet */}
@@ -1078,8 +1078,8 @@ export default function SurveySection2() {
                   alt="Accuracy"
                   className="w-5 h-5 flex-shrink-0"
                 />
-                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
-                  <span className="font-bold">  &ensp;&ensp;&ensp; מטרת הפרק: </span>
+                <div className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif',transform:'TranslateX(1.5rem', fontSize:'0.75rem' }}>
+                  <span className="font-bold" style={{}}>  &ensp;&ensp;&ensp; מטרת הפרק: </span>
  לספק מפת דרכים סדורה בת 7 צעדים, ליצירת סל רווחה מגוון ומותאם תרבותית. הפרק מאפשר לארגון לבחור את נקודת ההתחלה הרלוונטית עבורו, בהתאם למצבו הנוכחי, ולפעול בצורה מדורגת, ריאלית ומותאמת לקצבו הפנימי.</div>
               </div>
 
@@ -1288,7 +1288,7 @@ export default function SurveySection2() {
 
                 {/* Summary and Closing */}
                 <div id="summary" className="mt-[10px]">
-                  <h2 className="text-right text-2xl font-bold mb-[5px]" style={{ color: '#5B4B43', fontFamily: 'Inter, sans-serif', fontSize:'0.9375rem' }}>
+                  <h2 className="text-right text-2xl font-bold mb-[5px]" style={{ color: '#0A476D', fontFamily: 'Inter, sans-serif', fontSize:'0.9375rem' }}>
                     סיכום ודברי סיום
                   </h2>
 
