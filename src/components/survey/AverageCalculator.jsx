@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PolygonIcon from "../../assets/Polygon 1.svg";
 
 export default function AverageCalculator({ answers }) {
   const [showAverage, setShowAverage] = useState(false);
@@ -76,7 +77,7 @@ export default function AverageCalculator({ answers }) {
           >
             <div style={{ width: '270px' }} className="relative" style={{ width: '0.75rem', height: '0.625rem' }}>
               <img
-                src="/src/assets/Polygon 1.svg"
+                src={PolygonIcon}
                 alt="indicator"
                 className="absolute transform -translate-x-1/2"
                 style={{ left: `${getPolygonPosition()}%`, width: '12px', height: '10px' }}
