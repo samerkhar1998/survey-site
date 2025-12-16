@@ -6,6 +6,7 @@ import EventPlanningCard from "./EventPlanningCard";
 import LifeEventCard from "./LifeEventCard";
 import MourningCard from "./MourningCard";
 import CulturalEventCard from "./CulturalEventCard";
+import SectionRectangle from "../../assets/Section rectangle.svg";
 import { X } from "lucide-react";
 
 export default function SurveySection2() {
@@ -18,7 +19,7 @@ export default function SurveySection2() {
         style={{ width: '19.25rem', height: '2.5rem', marginTop: '5px', right: '-25px' }}
       >
         <img
-          src="/src/assets/Section rectangle.svg"
+          src={SectionRectangle}
           alt="Banner"
           className="w-full h-full object-cover"
           style={{
@@ -278,7 +279,7 @@ export default function SurveySection2() {
         {/* Banner */}
         <div className="relative ml-auto mb-6" style={{ width: '19.25rem', height: '2.5rem', marginTop: '1.25rem', right: '-25px' }}>
           <img
-            src="/src/assets/Section rectangle.svg"
+            src={SectionRectangle}
             alt="Banner"
             className="w-full h-full object-cover"
             style={{
@@ -539,7 +540,7 @@ export default function SurveySection2() {
               {/* Banner */}
               <div className="relative ml-auto mb-6" style={{ width: '19.25rem', height: '2.5rem', marginTop: '1.25rem', right: '-25px' }}>
                 <img
-                  src="/src/assets/Section rectangle.svg"
+                  src={SectionRectangle}
                   alt="Banner"
                   className="w-full h-full object-cover"
                   style={{
@@ -887,7 +888,7 @@ export default function SurveySection2() {
               <div id="section5" className="mt-[5px]">
                 {/* Banner */}
                 <div className="relative ml-auto mb-6" style={{ width: '19.25rem', height: '2.5rem', marginTop: '1.25rem', right: '-25px' }}>
-                  <img src="/src/assets/Section rectangle.svg" alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
+                  <img src={SectionRectangle} alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
                   <div className="absolute inset-0 flex items-center justify-end text-right"
                     style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right', fontSize:'0.75rem' }}
                   >
@@ -1056,7 +1057,7 @@ export default function SurveySection2() {
               <div id="section6" className="mt-8">
                 {/* Banner */}
                 <div className="relative ml-auto mb-6" style={{ width: '21.25rem', height: '3rem', marginTop: '1.25rem', right: '-25px' }}>
-                  <img src="/src/assets/Section rectangle.svg" alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
+                  <img src={SectionRectangle} alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
                   <div className="absolute inset-0 flex items-center justify-end text-right"
                     style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right', fontSize:'0.75rem' }}
                   >
