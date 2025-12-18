@@ -13,11 +13,11 @@ export default function AverageCalculator({ answers }) {
   const average = calculateAverage();
 
   const scaleColors = [
-    { value: 1, color: '#B1937E', fontSize: '0.5rem',label: 'לא בשל כלל' },
-    { value: 2, color: 'rgba(0, 160, 191, 0.6)', fontSize: '0.5rem', label: 'לא בשל' },
-    { value: 3, color: '#00A0BF', fontSize: '0.5rem', label: 'בשל בינוני' },
-    { value: 4, color: '#A8D1BA', fontSize: '0.5rem', label: 'בשל' },
-    { value: 5, color: '#79BF98', fontSize: '0.5rem', label: 'בשל מאד' },
+    { value: 1, color: '#B1937E', fontSize: '0.5rem',label: 'לא מודע' },
+    { value: 2, color: 'rgba(0, 160, 191, 0.6)', fontSize: '0.5rem', label: 'מודע' },
+    { value: 3, color: '#00A0BF', fontSize: '0.5rem', label: 'יוזמה ממוקדת' },
+    { value: 4, color: '#A8D1BA', fontSize: '0.5rem', label: 'אינטגרציה' },
+    { value: 5, color: '#79BF98', fontSize: '0.5rem', label: 'קיימות' },
   ];
 
   // Calculate polygon position (percentage)

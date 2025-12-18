@@ -261,8 +261,15 @@ export default function SurveySection2() {
         </CardCarousel>
       </div>
 
+      <div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
+
       {/* Additional recommendations after cards */}
-      <div className="mt-[5px] space-y-[5px]">
+      <div className="mt-[7px] space-y-[5px]">
         <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
@@ -426,10 +433,17 @@ export default function SurveySection2() {
               eventType="חברה"
             />
           </CardCarousel>
+          <div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
         </div>
+        
 
         {/* Additional recommendations after cards */}
-        <div className="mt-6 space-y-4" style={{marginTop:'0px'}}>
+        <div className="mt-6 space-y-4" style={{marginTop:'8px'}}>
         <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
           <img
             src={CommentsIcon}
@@ -583,7 +597,12 @@ export default function SurveySection2() {
                 />
               </CardCarousel>
               </div>
-
+              <div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
               {/* Green line separator */}
               <div className="mt-8 -mx-[25px]">
               <div className="w-full" style={{ backgroundColor: '#79BF98', height: '5px' }} />
@@ -799,7 +818,12 @@ export default function SurveySection2() {
                   />
                 </CardCarousel>
               </div>
-
+<div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
               {/* Additional note after cards */}
               <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                 <img
@@ -927,7 +951,12 @@ export default function SurveySection2() {
                   />
                 </CardCarousel>
               </div>
-
+                    <div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
               {/* רגעי משבר משפחתיים */}
               <div className="mt-[10px]">
                 <p className="text-right text-sm font-bold" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
@@ -1113,7 +1142,12 @@ export default function SurveySection2() {
                     />
                   </CardCarousel>
                 </div>
-
+<div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
                 {/* Green bullet recommendation */}
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                 <img
@@ -1349,9 +1383,14 @@ export default function SurveySection2() {
                     />
                   </CardCarousel>
                 </div>
-
+<div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
                 {/* Final recommendation */}
-                <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
+                <div className="flex items-start gap-2" style={{ color: '#79BF98',marginTop:'8px'}}>
                   <img
                     src={CommentsIcon}
                     alt="Comments"
