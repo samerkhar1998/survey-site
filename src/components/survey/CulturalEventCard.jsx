@@ -55,7 +55,7 @@ export default function CulturalEventCard({ title, subtitle, purpose, responsibl
               ))}
             </ul>
           ) : (
-            <p className="text-right text-sm" style={{ color: '#5B4B43' }}>
+            <p className="text-right text-sm" style={{ color: '#5B4B43',fontSize:'0.75rem', lineHeight:'0.9375rem' }}>
               {responsibleParties}
             </p>
           )}
@@ -69,7 +69,7 @@ export default function CulturalEventCard({ title, subtitle, purpose, responsibl
             דגשים תרבותיים והערות:
           </p>
           {Array.isArray(notes) ? (
-            <ul className="text-right text-sm list-disc list-inside space-y-1" style={{ color: '#5B4B43' }} dir="rtl">
+            <ul className="text-right text-sm list-disc list-inside space-y-1" style={{ color: '#5B4B43',fontSize:'0.75rem',lineHeight:'0.9375rem'  }} dir="rtl">
               {notes.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
