@@ -1,6 +1,7 @@
 import React from "react";
 import ScoreExplanation from "./ScoreExplanation";
 import SummaryChart from "./SummaryChart";
+import SummaryChartDesktop from "./SummaryChartDesktop";
 import MegaphoneIcon from "../../assets/megaphone 1.svg";
 
 export default function SurveySummary({ sectionAverages }) {
@@ -36,7 +37,12 @@ export default function SurveySummary({ sectionAverages }) {
         <ScoreExplanation />
 
         {/* Summary chart */}
-        <SummaryChart sectionAverages={sectionAverages} />
+        <div className="md:hidden">
+          <SummaryChart sectionAverages={sectionAverages} />
+        </div>
+        <div className="hidden md:block">
+          <SummaryChartDesktop sectionAverages={sectionAverages} />
+        </div>
       </div>
 
       {/* Bullets after chart */}
