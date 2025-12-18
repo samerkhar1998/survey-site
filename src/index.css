@@ -20,37 +20,34 @@
   }
 }
 
-/* Define the Regular weight (400) */
 @font-face {
   font-family: 'FbScorpion';
   src:
     local('FbScorpion Regular'),
     local('FbScorpion-Regular'),
-    url('/fonts/FbScorpion-Regular.woff2') format('woff2');
+    url('/fonts/FBSCORPION-REGULAR.OTF') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Define the Bold weight (700) */
 @font-face {
   font-family: 'FbScorpion';
   src:
     local('FbScorpion Bold'),
     local('FbScorpion-Bold'),
-    url('/fonts/FbScorpion-Bold.woff2') format('woff2');
+    url('/fonts/FBSCORPION-BOLD.OTF') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* Define the Black weight (900) */
 @font-face {
   font-family: 'FbScorpion';
   src:
     local('FbScorpion Black'),
     local('FbScorpion-Black'),
-    url('/fonts/FbScorpion-Black.woff2') format('woff2');
+    url('/fonts/FBSCORPION-BLACK.OTF') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
