@@ -832,7 +832,7 @@ export default function SurveySection2() {
 
                 {/* Text below line */}
                 <div className="px-[25px] pt-6">
-                  <p className="text-right text-sm leading-relaxed" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
+                  <p className="text-right text-sm leading-relaxed font-bold" style={{ color: '#5B4B43',   fontSize:'0.75rem' }}>
                     הרחבה על ההבדלים בנושא האבל בדעות השונות בחברה הערבית:
                   </p>
                 </div>
@@ -996,7 +996,7 @@ export default function SurveySection2() {
                 </div>
 
                 {/* Blue heading */}
-                <p className="text-right text-sm font-bold mt-6" style={{ color: '#0A476D',   fontSize:"0.75rem" }}>
+                <p className="text-right text-sm font-bold mt-6" style={{ color: '#5B4B43',   fontSize:"0.75rem" }}>
                   דוגמאות ופרקטיקה לשימוש בעת תכנון אירועי ציון דרך בקריירה של עובד מהחברה הערבית:
                 </p>
 
@@ -1164,7 +1164,7 @@ export default function SurveySection2() {
                 </div>
 
                 {/* Additional intro paragraph */}
-                <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#0A476D',   fontSize:"0.75rem" }}>
+                <div className="text-right text-sm leading-relaxed mt-[10px]" style={{ color: '#5B4B43',   fontSize:"0.75rem" }}>
                   להלן <span className="font-bold">מדריך להתאמת טל הרווחה הארגוני יישומו (7 צעדים)</span>. ניתן להשתמש רק בחלק מהצעדים – אם צעד מסוים כבר מיושם בארגון, ניתן לדלג לצעד הבא.
                 </div>
 
