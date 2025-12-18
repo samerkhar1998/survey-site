@@ -54,8 +54,9 @@ export default function SurveyEntrance({ onStart }) {
           <div style={{marginBottom: '5px',fontSize: '0.75rem'}}>  תחום הרווחה נוגע ישירות בכל עובד ועובדת ברמה האישית, הקבוצתית והארגונית. כאשר הוא מותאם למאפיינים ולצרכים של אוכלוסיות מגוונות, הוא יכול לשמש כלי משמעותי לעידוד מוטיבציה, שימור עובדים, הגברת תחושת השייכות וחיזוק ערכי הסובלנות והוגנות. כל אלה משפיעים באופן ישיר גם על הרווחיות והביצועים הארגוניים <a href="https://co-impact.org.il/calculator/" target="_blank" rel="noopener noreferrer" style={{ color: '#006FFF', textDecoration: 'underline' }}>(ע"פ מחקר ומחשבון הפוטנציאל הכלכלי של העסקה מגוונת-TASC)</a> סל רווחה מותאם תרבותית מעביר לעובדים מסר ברור: הארגון רואה אותם, מבין את צרכיהם ומעריך את הייחודיות שלהם. כך הוא מחזק את תחושת השייכות, מעודד גיבוש צוותי, ומעורר "גאוות יחידה".</div>
         </p>
 
-        {/* Recommendation with icon - Desktop */}
-        <div className="hidden md:flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+
+        {/* Recommendation with icon */}
+        <div className="flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
@@ -63,26 +64,6 @@ export default function SurveyEntrance({ onStart }) {
           />
           <p className="text-right text-sm leading-relaxed" style={{ fontSize: "0.75rem" }}>
             <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
-          </p>
-        </div>
-
-        {/* Recommendation with icon - Mobile */}
-        <div className="md:hidden flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
-          <img
-                src={CommentsIcon}
-                alt="Comments"
-                style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
-              />
-          <p
-            className="text-right text-sm leading-relaxed"
-            style={{ fontSize: "0.75rem" }}
-            dir="rtl"
-          >
-            <span className="font-bold">
-              המלצה גורפת
-              
-            </span>
-            – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
           </p>
         </div>
       </div>
