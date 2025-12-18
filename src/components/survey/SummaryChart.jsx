@@ -30,9 +30,9 @@ export default function SummaryChart({ sectionAverages }) {
 
   const getBarColor = (value) => {
     if (value === 0) return "rgba(217, 217, 217, 0.3)";
-    if (value <= 2) return "#A17D62";
-    if (value <= 3) return "rgba(0, 160, 191, 0.6)";
-    if (value <= 4) return "#00A0BF";
+    if (value < 2) return "#A17D62";
+    if (value < 3) return "rgba(0, 160, 191, 0.6)";
+    if (value < 4) return "#00A0BF";
     if (value < 5) return "#BADBC9";
     return "#91C8A9";
   };
