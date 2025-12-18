@@ -18,7 +18,7 @@ export default function SurveyFooter() {
           ניתן לפנות להתייעצות:
         </p>
         <p className="mt-3" style={textStyle}>
-          0526489006
+          04-8888965
         </p>
         <div className="flex justify-center gap-4 mt-4 flex-row-reverse">
           <a
