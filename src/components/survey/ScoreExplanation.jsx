@@ -14,7 +14,7 @@ const explanations = [
   {
     value: 3,
     color: '#00A0BF',
-    text: "קיימים ניסיונות נקודתיים להתאמות בציר זה, לרוב ביוזמה אישית (לרוב מצוות מש״א), אך אין מדיניות/ עקביות."
+    text: "קיימים ניסיונות נקודתיים להתאמות בציר זה, לרוב ביוזמה אישית (לרוב מצוות מש״א), אך אין מדיניות / עקביות."
   },
   {
     value: 4,
@@ -36,7 +36,7 @@ const ExplanationItem = ({ item }) => (
     >
       {item.value}
     </div>
-    <p className="text-right leading-relaxed" style={{ color: '#5B4B43', fontSize: '0.75rem', fontFamily: 'Inter, sans-serif', fontWeight: 400, lineHeight:'0.75rem' }}>
+    <p className="text-right leading-relaxed" style={{ color: '#5B4B43', fontSize: '0.75rem', fontWeight: 400, lineHeight:'0.75rem' }}>
       {item.text}
     </p>
   </div>

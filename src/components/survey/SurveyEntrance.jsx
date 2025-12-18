@@ -20,7 +20,7 @@ export default function SurveyEntrance({ onStart }) {
           src={CoImpactLogo}
           alt="Co-Impact Logo"
           className="object-contain"
-          style={{ width: '8.125rem', height: '2.125rem' }}
+          style={{ width: '10.125rem', height: '4.125rem' }}
         />
       </div>
 

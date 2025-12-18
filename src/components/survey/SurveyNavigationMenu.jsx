@@ -37,7 +37,7 @@ export default function SurveyNavigationMenu() {
                 className="w-full px-6 py-4 text-right hover:bg-gray-50 transition-colors"
                 style={{ 
                   color: '#0A476D',
-                  fontFamily: 'Inter, sans-serif',
+                  
                   fontWeight: item.bold ? 'bold' : 'normal',
                   fontSize: '16px'
                 }}
@@ -61,7 +61,7 @@ export default function SurveyNavigationMenu() {
           color: isOpen ? '#FFFFFF' : '#0A476D'
         }}
       >
-        <span className="text-lg font-bold" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <span className="text-lg font-bold" >
           תפריט
         </span>
       </button>
