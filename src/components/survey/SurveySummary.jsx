@@ -25,7 +25,7 @@ export default function SurveySummary({ sectionAverages }) {
           className="text-right px-[0px]"
           style={{ 
             color: '#0A476D', 
-            fontSize: '0.75rem', 
+            fontSize: '0.875rem', 
             fontStyle:'bold',
             fontWeight: '700',
             marginBottom: '15px'
