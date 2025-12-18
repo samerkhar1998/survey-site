@@ -260,36 +260,36 @@ export default function SurveySection2() {
 
       {/* Additional recommendations after cards */}
       <div className="mt-[7px] space-y-[5px]">
-        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <div className="flex items-start gap-[0.5rem]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
             style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
           />
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D', fontSize:'0.75rem'  }}>
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98', fontSize:'0.75rem'  }}>
                 בעת תכנון פעילות לחג, יש לערב לכך נציגות מש"א והרווחה, גם מנהלים מצוותים מגוונים, ועובדים שחוגגים את החג, במטרה לחזק את תחושת השייכות של העובדים לארגון ולקבל מהם הערות וטיפים.
           </p>
         </div>
 
-        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400'}}>
+        <div className="flex items-start gap-[0.5rem]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400'}}>
           
           <img
             src={CommentsIcon}
             alt="Comments"
             style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
           />
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem'  }}>
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem'  }}>
                 מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
           </p>
         </div>
 
-        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <div className="flex items-start gap-[0.5rem]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
             style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
           />
-          <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem'  }}>
+          <p className="text-right text-sm leading-relaxed" style={{ color: '#79BF98',   fontSize:'0.75rem'  }}>
                 חשוב לתכנן את החופשות בהתאם ללוחות החגים של העובדים השונים, כך שתתאפשר להם מנוחה וחגיגה בהתאם למסורתם ותרבותם, ותישמר תחושת ההתחשבות והשוויון בארגון.
           </p>
         </div>
