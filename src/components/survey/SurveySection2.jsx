@@ -1136,7 +1136,7 @@ export default function SurveySection2() {
                 <div className="relative ml-auto mb-6" style={{ width: '21.25rem', height: '3rem', marginTop: '1.25rem', right: '-25px' }}>
                   <img src={SectionRectangle} alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
                   <div className="absolute inset-0 flex items-center justify-end text-right"
-                    style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right', fontSize:'0.75rem' }}
+                    style={{ color: '#0A476D', width: '90%', textAlign: 'right', fontSize:'0.75rem' }}
                   >
                     <span className="font-black text-sm" style={{ textAlign: 'right', width: '-webkit-fill-available' , paddingRight: '25px'}}>פרק 6:
                       
