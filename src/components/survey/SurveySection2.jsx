@@ -150,12 +150,7 @@ export default function SurveySection2() {
         </CardCarousel>
       </div>
 
-      <div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+      
 
       {/* Blue line with dot */}
       <div className="mt-8 -mx-[25px]">
@@ -261,12 +256,7 @@ export default function SurveySection2() {
         </CardCarousel>
       </div>
 
-      <div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+      
 
       {/* Additional recommendations after cards */}
       <div className="mt-[7px] space-y-[5px]">
@@ -433,12 +423,7 @@ export default function SurveySection2() {
               eventType="חברה"
             />
           </CardCarousel>
-          <div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+          
         </div>
         
 
@@ -597,12 +582,7 @@ export default function SurveySection2() {
                 />
               </CardCarousel>
               </div>
-              <div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+              
               {/* Green line separator */}
               <div className="mt-8 -mx-[25px]">
               <div className="w-full" style={{ backgroundColor: '#79BF98', height: '5px' }} />
@@ -818,12 +798,7 @@ export default function SurveySection2() {
                   />
                 </CardCarousel>
               </div>
-<div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+
               {/* Additional note after cards */}
               <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                 <img
@@ -951,12 +926,7 @@ export default function SurveySection2() {
                   />
                 </CardCarousel>
               </div>
-                    <div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+               
               {/* רגעי משבר משפחתיים */}
               <div className="mt-[10px]">
                 <p className="text-right text-sm font-bold" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
@@ -1142,12 +1112,7 @@ export default function SurveySection2() {
                     />
                   </CardCarousel>
                 </div>
-<div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+
                 {/* Green bullet recommendation */}
                 <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
                 <img
@@ -1383,12 +1348,7 @@ export default function SurveySection2() {
                     />
                   </CardCarousel>
                 </div>
-<div
-        className="md:hidden"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
-      </div>
+
                 {/* Final recommendation */}
                 <div className="flex items-start gap-2" style={{ color: '#79BF98',marginTop:'8px'}}>
                   <img
