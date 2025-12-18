@@ -71,11 +71,8 @@ export default function AverageCalculator({ answers }) {
 
         {/* Polygon indicator - between numbers and colors */}
         {showAverage && (
-          <div 
-            className="flex justify-center relative"
-            style={{ direction: 'ltr' }}
-          >
-            <div style={{ width: '270px' }} className="relative" style={{ width: '0.75rem', height: '0.625rem' }}>
+          <div className="flex justify-center" style={{ direction: 'ltr' }}>
+            <div className="relative" style={{ width: '210px', height: '0.325rem' }}>
               <img
                 src={PolygonIcon}
                 alt="indicator"

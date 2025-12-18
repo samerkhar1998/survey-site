@@ -52,7 +52,7 @@ export default function SurveySection2() {
         />
         <div className="text-right text-sm leading-relaxed" style={{ marginTop:'2px',color: '#5B4B43', fontSize:'0.75rem'}}>
           <p>
-            <span className="font-bold" style={{marginRight:'1.25rem'}}> מטרת הפרק:</span> לחזק את תחושת השייכות של העובדים (הערבים וכלל האוכלוסיות) לארגון, לתרבות הארגונית ולמרחב המשותף, באמצעות ציון חגים וימים משמעותיים באופן מכבד, הוגן סובלני, מגוון ומותאם תרבותית.
+            <span className="font-bold" > מטרת הפרק:</span> לחזק את תחושת השייכות של העובדים (הערבים וכלל האוכלוסיות) לארגון, לתרבות הארגונית ולמרחב המשותף, באמצעות ציון חגים וימים משמעותיים באופן מכבד, הוגן סובלני, מגוון ומותאם תרבותית.
           </p>
           <p className="mt-3">
             ציון חגים וימים משמעותיים מהווה הזדמנות להכניס "צבע" וחיות לארגון, לעודד היכרות בין עובדים מרקעים שונים, ולהגביר הערכה הדדית וחיבור חברתי.
@@ -150,7 +150,12 @@ export default function SurveySection2() {
         </CardCarousel>
       </div>
 
-      {/* <div style={{ color: '#5B4B43',fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}>ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים</div> */}
+      <div
+        className="md:hidden"
+        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
+      >
+        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
+      </div>
 
       {/* Blue line with dot */}
       <div className="mt-8 -mx-[25px]">

@@ -76,9 +76,7 @@ export default function SummaryChartDesktop({ sectionAverages }) {
           <image href={ArrowAsset} width={12 * SCALE} height={Y_ARROW_LENGTH - 12} />
         </g>
 
-        <g
-          transform={`translate(${LEFT_MARGIN + X_ARROW_LENGTH} ${yAxisBottom - 6 * SCALE}) rotate(90)`}
-        >
+        <g transform={`translate(${LEFT_MARGIN + X_ARROW_LENGTH} ${yAxisBottom - 6 * SCALE}) rotate(90)`}>
           <image href={ArrowAsset} width={13 * SCALE} height={Y_ARROW_LENGTH} />
         </g>
 
