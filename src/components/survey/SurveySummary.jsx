@@ -46,7 +46,7 @@ export default function SurveySummary({ sectionAverages }) {
       </div>
 
       {/* Bullets after chart */}
-      <div className="px-[25px] mt-4 text-right space-y-2" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }} dir="rtl">
+      <div className="px-[25px] mt-4 text-right space-y-2" style={{ color: '#0A476D', fontSize: '0.75rem', fontWeight:'400' }} dir="rtl">
         <div className="flex items-start gap-2">
           <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
           <p>לאחר זיהוי התחומים בהם כדאי להעמיק או לשפר את היישום בפועל, תוכלו להיעזר בפרקים 2 עד 5 שלהלן המציעים כלים, עקרונות ודוגמאות שיעזרו לכם לפתח סל רווחה מגוון ומותאם תרבותית – צעד אחר צעד.</p>
