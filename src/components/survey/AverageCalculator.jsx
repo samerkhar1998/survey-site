@@ -53,7 +53,7 @@ export default function AverageCalculator({ answers }) {
       {/* Average scale - always visible */}
       <div className="relative">
         {/* Numbers - above polygon */}
-        <div className="flex justify-center mb-1" style={{ direction: 'ltr' }}>
+        <div className="flex justify-center" style={{ direction: 'ltr' }}>
           {scaleColors.map((item) => (
             <div
               key={item.value}
@@ -72,12 +72,12 @@ export default function AverageCalculator({ answers }) {
         {/* Polygon indicator - between numbers and colors */}
         {showAverage && (
           <div className="flex justify-center" style={{ direction: 'ltr' }}>
-            <div className="relative" style={{ width: '210px', height: '0.325rem' }}>
+            <div className="relative" style={{ width: '13.5rem', height: '0.325rem' }}>
               <img
                 src={PolygonIcon}
                 alt="indicator"
                 className="absolute transform -translate-x-1/2"
-                style={{ left: `${getPolygonPosition()}%`, width: '12px', height: '10px' }}
+                style={{ left: `${getPolygonPosition()}%`, width: '0.75rem', height: '0.625rem' }}
               />
             </div>
           </div>
