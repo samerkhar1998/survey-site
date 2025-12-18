@@ -929,11 +929,11 @@ export default function SurveySection2() {
                
               {/* רגעי משבר משפחתיים */}
               <div className="mt-[10px]">
-                <p className="text-right text-sm font-bold" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
+                <p className="text-right text-sm font-bold" style={{ color: '#0A476D',   fontSize:'0.9375rem' }}>
                   רגעי משבר משפחתיים:
                 </p>
 
-                <p className="text-right text-sm leading-relaxed mt-3" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
+                <p className="text-right text-sm leading-relaxed" style={{ color: '#0A476D',   fontSize:'0.75rem' }}>
                   באופן כללי, עובדים ממעמד סוציו-אקונומי נמוך נתקלים בשיעורים יותר גבוהים במשברים אישיים ומשפחתיים כגון קשיים ככלכליים, שיקולים, גירושין או מצבי אלימות. חשוב שהארגון יכיר בכך, יכיר את המציאות (למשל תקופות של אלימות נרחבת יותר) ויספק ברגישות, ייצע תמיכה מותאמת וישמור על כבוד ופרטיותו של העובד.
                 </p>
 
