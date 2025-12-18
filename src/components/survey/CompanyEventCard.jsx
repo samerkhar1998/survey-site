@@ -3,7 +3,7 @@ import React from "react";
 export default function CompanyEventCard({ title, goal, highlights, eventType }) {
   return (
     <div 
-      className="p-6 mb-4"
+      className="p-6"
       style={{ 
         borderRadius: '24px',
         backgroundColor: 'rgba(217, 217, 217, 0.5)',

@@ -75,7 +75,7 @@ export default function CardCarousel({ children }) {
       {/* Scrollable container */}
       <div 
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto scrollbar-hide pb-4"
+        className="flex gap-4 overflow-x-auto scrollbar-hide pb-[4px]"
         style={{ 
           scrollSnapType: 'x mandatory',
           WebkitOverflowScrolling: 'touch',
@@ -93,7 +93,7 @@ export default function CardCarousel({ children }) {
         ))}
       </div>
       <div
-        className="md:hidden"
+        className="md:hidden pb-[5px]"
         style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
       >
         ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
