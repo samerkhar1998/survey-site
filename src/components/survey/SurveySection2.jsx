@@ -283,7 +283,7 @@ export default function SurveySection2() {
           </p>
         </div>
 
-        <div className="flex items-start gap-[0.5rem]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <div className="flex items-start gap-[2px]" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
@@ -646,9 +646,9 @@ export default function SurveySection2() {
               </div>
 
               {/* Example box */}
-              <div className="mt-6  mx-[-25px] px-[25px] py-4" style={{ backgroundColor: 'rgba(10, 71, 109, 0.1)'}}>
+              <div className=" mx-[-25px] px-[25px] py-4" >
                 <p className="text-right text-sm leading-relaxed" style={{   fontSize:'0.75rem'}}>
-                  <span className="font-bold" style={{ color: '#79BF98' }}>לדוגמה:</span>
+                  <span className="font-bold" style={{ color: '#5B4B43' }}>לדוגמה:</span>
                   <span style={{ color: '#5B4B43' }}> האירוע המקביל לבר מצווה יכול להיות המעבר מבית הספר היסודי לחטיבת הביניים — שלב חיים משמעותי לילד ולמשפחתו.</span>
                 </p>
               </div>
