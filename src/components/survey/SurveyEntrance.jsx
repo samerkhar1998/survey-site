@@ -32,12 +32,10 @@ export default function SurveyEntrance({ onStart }) {
           className="w-full h-full object-contain"
           style={{ borderTopLeftRadius: 0, borderBottomRightRadius: 0 }}
         />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img
-            src={Title1}
-            alt="Title"
-            style={{ width: "12.9375rem", height: "2rem" }}
-          />
+        <div className="absolute inset-0 flex items-center justify-center font-black" style={{
+          color: "#0A476D", fontSize: "1.3125rem", lineHeight:'1.375rem'
+        }}>
+          התאמת סל הרווחה
         </div>
       </div>
 
