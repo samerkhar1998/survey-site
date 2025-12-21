@@ -24,7 +24,7 @@ export default function MourningCard({ title, sections }) {
             style={{
               color: '#0A476D',
               fontSize: section.isAppearanceLabel ? '0.9375rem' : '0.75rem',
-              fontWeight: section.isAppearanceLabel ? 900 : 'inherit'
+              fontWeight: section.isAppearanceLabel ? 900 : undefined
             }}
           >
             {section.label}

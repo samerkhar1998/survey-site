@@ -727,7 +727,8 @@ export default function SurveySection2() {
                       },
                       {
                         label: "לימודים גבוהים",
-                        content: ""
+                        content: "",
+                        isAppearanceLabel: true
                       },
                       {
                         label: "יהודים | דרוזים | מוסלמים | נוצרים:",
@@ -749,7 +750,8 @@ export default function SurveySection2() {
                       },
                       {
                         label: "חתונה",
-                        content: ""
+                        content: "",
+                        isAppearanceLabel: true
                       },
                       {
                         label: "יהודים | דרוזים | מוסלמים | נוצרים:",
@@ -854,11 +856,11 @@ export default function SurveySection2() {
                         isAppearanceLabel: true
                       },
                       {
-                        label: "דרוזים | מוסלמים | נוצרים:",
+                        label: "מוסלמים:",
                         content: "בשלושת ימי האבל הראשונים - בבית המשפחה או באולם אבלים, לאחריהם בבית המשפחה בלבד."
                       },
                       {
-                        label: "מוסלמים:",
+                        label: "דרוזים:",
                         content: "בשלושת ימי האבל הראשונים מתקיים בבית אלשעב (העם), לאחריהם בבית המשפחה בלבד."
                       },
                       {
@@ -872,7 +874,7 @@ export default function SurveySection2() {
                     title="הפרדת גברים- נשים"
                     sections={[
                       {
-                        label: "דרוזים | מוסלמים:",
+                        label: "מוסלמים | דרוזים:",
                         content: "גברים ונשים יושבים במתחמים נפרדים. אישה מנחמת תוכל לגשת למתחם הנשים. גבר מנחם יוכל לגשת למתחם הגברים. לצורך ניחום העובד או העובדת האבלים במקרה שהממונה לא יוכל להיכנס לאחד המתחמים – יצור קשר עם העובד/ת והם יצאו ויפגשו את הממונה מחוץ למתחם."
                       },
                       {

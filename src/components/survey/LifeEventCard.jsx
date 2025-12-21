@@ -19,7 +19,14 @@ export default function LifeEventCard({ title, sections }) {
       {/* Sections */}
       {sections.map((section, index) => (
         <div key={index} className={index > 0 ? 'mt-4' : ''}>
-          <p className="text-right font-bold mb-1" style={{ color: '#79BF98', fontSize: '0.75rem'}}>
+          <p
+            className="text-right font-bold mb-1"
+            style={{
+              color: '#79BF98',
+              fontSize: section.isAppearanceLabel ? '0.9375rem' : '0.75rem',
+              fontWeight: section.isAppearanceLabel ? 900 : undefined
+            }}
+          >
             {section.label}
           </p>
           {Array.isArray(section.content) ? (
