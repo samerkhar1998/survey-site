@@ -12,12 +12,18 @@ export default function SurveyCard({ title, subtitle, sections }) {
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-base font-black" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem' }}>
+      <h3
+        className="text-right font-black text-[0.9375rem] md:text-[1.1875rem] leading-[1rem] md:leading-[1.5rem]"
+        style={{ color: '#0A476D' }}
+      >
         {title}
       </h3>
       
       {subtitle && (
-        <p className="text-right text-sm mt-1" style={{ color: '#0A476D', fontWeight:'700', fontSize:'0.75rem', lineHeight:'0.9375rem' }}>
+        <p
+          className="text-right mt-1 font-bold text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+          style={{ color: '#0A476D' }}
+        >
           {subtitle}
         </p>
       )}
@@ -25,17 +31,27 @@ export default function SurveyCard({ title, subtitle, sections }) {
       {/* Sections */}
       {sections.map((section, index) => (
         <div key={index} className="mt-3">
-          <p className="text-right font-bold" style={{ color: '#79BF98', fontWeight:'700', fontSize:'0.75rem', lineHeight:'0.9375rem' }}>
+          <p
+            className="text-right font-bold text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+            style={{ color: '#79BF98' }}
+          >
             {section.label}
           </p>
           {Array.isArray(section.content) ? (
-            <ul className="text-right text-sm list-disc list-inside mt-1" style={{ color: '#5B4B43', fontWeight:'700', fontSize:'0.75rem', lineHeight:'0.9375rem'  }} dir="rtl">
+            <ul
+              className="text-right list-disc list-outside pr-4 mt-1 font-bold text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+              style={{ color: '#5B4B43' }}
+              dir="rtl"
+            >
               {section.content.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>
           ) : (
-            <p className="text-right text-sm mt-1" style={{ color: '#5B4B43', fontWeight:'400', fontSize:'0.75rem', lineHeight:'0.9375rem'  }}>
+            <p
+              className="text-right mt-1 font-normal text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+              style={{ color: '#5B4B43' }}
+            >
               {section.content}
             </p>
           )}

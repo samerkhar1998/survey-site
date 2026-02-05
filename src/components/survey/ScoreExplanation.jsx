@@ -31,12 +31,15 @@ const explanations = [
 const ExplanationItem = ({ item }) => (
   <div className="mb-3" style={{ direction: 'rtl' }}>
     <div 
-      className="font-bold mb-1 text-right"
-      style={{ color: item.color, fontSize: '0.75rem', fontWeight:'700', lineHeight:'0.75rem' }}
+      className="font-bold mb-1 text-right text-[0.75rem] md:text-[1rem]"
+      style={{ color: item.color, fontWeight:'700' }}
     >
       {item.value}
     </div>
-    <p className="text-right leading-relaxed" style={{ color: '#5B4B43', fontSize: '0.75rem', fontWeight: 400, lineHeight:'0.75rem' }}>
+    <p
+      className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]"
+      style={{ color: '#5B4B43', fontWeight: 400 }}
+    >
       {item.text}
     </p>
   </div>

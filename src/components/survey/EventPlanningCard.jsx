@@ -12,17 +12,27 @@ export default function EventPlanningCard({ title, sections }) {
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-lg font-bold mb-6" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem'  }}>
+      <h3
+        className="text-right font-black mb-6 text-[0.9375rem] md:text-[1.1875rem] leading-[1rem] md:leading-[1.5rem]"
+        style={{ color: '#0A476D' }}
+      >
         {title}
       </h3>
 
       {/* Sections */}
       {sections.map((section, index) => (
         <div key={index} className={index > 0 ? 'mt-3' : ''}>
-          <p className="text-right font-bold mb-2" style={{ color: '#79BF98', fontSize: '0.75rem',  lineHeight:'0.9375rem' }}>
+          <p
+            className="text-right font-bold mb-2 text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+            style={{ color: '#79BF98' }}
+          >
             {section.label}
           </p>
-          <ul className="text-right text-sm list-disc list-inside space-y-2" style={{ lineHeight:'0.9375rem',color: '#5B4B43', fontSize:'0.75rem' }} dir="rtl">
+          <ul
+            className="text-right list-disc list-outside pr-4 space-y-2 text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+            style={{ color: '#5B4B43' }}
+            dir="rtl"
+          >
             {section.items.map((item, i) => (
               <li key={i}>{item}</li>
             ))}

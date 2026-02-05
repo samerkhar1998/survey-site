@@ -42,25 +42,25 @@ export default function SurveyEntrance({ onStart }) {
       {/* C. Paragraph */}
       <div className="mt-[23px] w-full">
         <p 
-          className="text-right leading-relaxed text-sm"
+          className="text-right leading-relaxed md:leading-[1.5rem] text-sm md:text-[1rem]"
           style={{ color: '#5B4B43' }}
         >
-          <span className="font-bold" style={{ color: "#0A476D", fontSize: "0.875rem" }}>סל רווחה מותאם תרבותית – </span><span className="font-black" style={{ color: "#0A476D", fontSize: "0.875rem" }}>למה כדאי?</span>
+          <span className="font-bold" style={{ color: "#0A476D" }}>סל רווחה מותאם תרבותית – </span><span className="font-black" style={{ color: "#0A476D" }}>למה כדאי?</span>
           <br />
-          <div style={{marginBottom: '5px', fontSize: '0.75rem'}}> בחברות רבות קיימת עדיין תפיסה של One Size Fits All בתחום הרווחה הארגונית. אולם בפועל, לעובדים שונים יש צרכים מגוונים, נקודות מבט שונות, ותגובות רגשיות שונות לאותם גירויים או יוזמות.</div>
+          <div className="text-[0.75rem] md:text-[1rem]" style={{marginBottom: '5px'}}> בחברות רבות קיימת עדיין תפיסה של One Size Fits All בתחום הרווחה הארגונית. אולם בפועל, לעובדים שונים יש צרכים מגוונים, נקודות מבט שונות, ותגובות רגשיות שונות לאותם גירויים או יוזמות.</div>
           
-          <div style={{marginBottom: '5px',fontSize: '0.75rem'}}>  תחום הרווחה נוגע ישירות בכל עובד ועובדת ברמה האישית, הקבוצתית והארגונית. כאשר הוא מותאם למאפיינים ולצרכים של אוכלוסיות מגוונות, הוא יכול לשמש כלי משמעותי לעידוד מוטיבציה, שימור עובדים, הגברת תחושת השייכות וחיזוק ערכי הסובלנות והוגנות. כל אלה משפיעים באופן ישיר גם על הרווחיות והביצועים הארגוניים <a href="https://co-impact.org.il/calculator/" target="_blank" rel="noopener noreferrer" style={{ color: '#006FFF', textDecoration: 'underline' }}>(ע"פ מחקר ומחשבון הפוטנציאל הכלכלי של העסקה מגוונת-TASC)</a> סל רווחה מותאם תרבותית מעביר לעובדים מסר ברור: הארגון רואה אותם, מבין את צרכיהם ומעריך את הייחודיות שלהם. כך הוא מחזק את תחושת השייכות, מעודד גיבוש צוותי, ומעורר "גאוות יחידה".</div>
+          <div className="text-[0.75rem] md:text-[1rem]" style={{marginBottom: '5px'}}>  תחום הרווחה נוגע ישירות בכל עובד ועובדת ברמה האישית, הקבוצתית והארגונית. כאשר הוא מותאם למאפיינים ולצרכים של אוכלוסיות מגוונות, הוא יכול לשמש כלי משמעותי לעידוד מוטיבציה, שימור עובדים, הגברת תחושת השייכות וחיזוק ערכי הסובלנות והוגנות. כל אלה משפיעים באופן ישיר גם על הרווחיות והביצועים הארגוניים <a href="https://co-impact.org.il/calculator/" target="_blank" rel="noopener noreferrer" style={{ color: '#006FFF', textDecoration: 'underline' }}>(ע"פ מחקר ומחשבון הפוטנציאל הכלכלי של העסקה מגוונת-TASC)</a> סל רווחה מותאם תרבותית מעביר לעובדים מסר ברור: הארגון רואה אותם, מבין את צרכיהם ומעריך את הייחודיות שלהם. כך הוא מחזק את תחושת השייכות, מעודד גיבוש צוותי, ומעורר "גאוות יחידה".</div>
         </p>
 
 
         {/* Recommendation with icon */}
-        <div className="flex items-start gap-2 mt-4" style={{ color: '#79BF98', fontSize: '0.625rem', fontWeight:'400' }}>
+        <div className="flex items-start gap-2 mt-4 text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
           <img
             src={CommentsIcon}
             alt="Comments"
             style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
           />
-          <p className="text-right text-sm leading-relaxed" style={{ fontSize: "0.75rem" }}>
+          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]">
             <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
           </p>
         </div>

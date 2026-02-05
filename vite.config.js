@@ -4,7 +4,11 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  logLevel: 'error', // Suppress warnings, only show errors
+  // Default Vite log output so you can see the dev server URL in the terminal.
+  logLevel: 'info',
+  server: {
+    open: true,
+  },
   plugins: [
     base44({
       // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.
