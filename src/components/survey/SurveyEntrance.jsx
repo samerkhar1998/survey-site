@@ -36,12 +36,11 @@ export default function SurveyEntrance({ onStart }) {
           style={{ color: "#0A476D", fontSize: "1.3125rem", lineHeight: "1.375rem" }}
         >
           <span
-            className="md:text-[1.875rem] md:leading-[1.05]"
-            style={{ paddingLeft: "4rem", paddingRight: "4rem" }}
+            className="px-2 md:px-[4rem] md:text-[1.875rem] md:leading-[1.05]"
           >
             כלים להתאמת סל
             <span className="hidden md:block">רווחה לכלל העובדים</span>
-            <span className="md:hidden"> רווחה לכלל העובדים</span>
+            <span className="block md:hidden">רווחה לכלל העובדים</span>
           </span>
         </div>
       </div>
