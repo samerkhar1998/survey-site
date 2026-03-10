@@ -19,23 +19,30 @@ export default function SurveyEntrance({ onStart }) {
         <img
           src={CoImpactLogo}
           alt="Co-Impact Logo"
-          className="object-contain"
-          style={{ width: '10.125rem', height: '4.125rem' }}
+          className="w-[10.125rem] h-[5.125rem] md:w-[13rem] md:h-[5.25rem] object-contain"
         />
       </div>
 
       {/* B. Banner */}
-      <div className="relative mt-[20px] w-full" style={{ maxWidth: '100%', height: '3.25rem' }}>
+      <div className="relative mt-[20px] w-full h-[3.25rem] md:h-[5rem]" style={{ maxWidth: '100%' }}>
         <img
           src={BannerRectangle}
           alt="Banner"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-fill"
           style={{ borderTopLeftRadius: 0, borderBottomRightRadius: 0 }}
         />
-        <div className="absolute inset-0 flex items-center justify-center font-black" style={{
-          color: "#0A476D", fontSize: "1.3125rem", lineHeight:'1.375rem'
-        }}>
-          התאמת סל הרווחה
+        <div
+          className="absolute inset-0 flex items-center justify-center px-4 md:px-10 text-center font-black"
+          style={{ color: "#0A476D", fontSize: "1.3125rem", lineHeight: "1.375rem" }}
+        >
+          <span
+            className="md:text-[1.875rem] md:leading-[1.05]"
+            style={{ paddingLeft: "4rem", paddingRight: "4rem" }}
+          >
+            כלים להתאמת סל
+            <span className="hidden md:block">רווחה לכלל העובדים</span>
+            <span className="md:hidden"> רווחה לכלל העובדים</span>
+          </span>
         </div>
       </div>
 
