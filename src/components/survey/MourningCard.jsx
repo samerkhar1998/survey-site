@@ -12,7 +12,10 @@ export default function MourningCard({ title, sections }) {
       }}
     >
       {/* Title */}
-      <h3 className="text-right text-lg font-black mb-4" style={{ color: '#0A476D', fontWeight:'900', fontSize:'0.9375rem', lineHeight:'1rem'  }}>
+      <h3
+        className="text-right font-black mb-4 text-[0.9375rem] md:text-[1.1875rem] leading-[1rem] md:leading-[1.5rem]"
+        style={{ color: '#0A476D' }}
+      >
         {title}
       </h3>
 
@@ -20,23 +23,32 @@ export default function MourningCard({ title, sections }) {
       {sections.map((section, index) => (
         <div key={index} className={index > 0 ? 'mt-4' : ''}>
           <p
-            className="text-right font-bold mb-1"
+            className={`text-right mb-1 leading-[0.9375rem] md:leading-[1.5rem] ${
+              section.isAppearanceLabel
+                ? 'font-black text-[0.9375rem] md:text-[1.1875rem]'
+                : 'font-bold text-[0.75rem] md:text-[1rem]'
+            }`}
             style={{
               color: '#0A476D',
-              fontSize: section.isAppearanceLabel ? '0.9375rem' : '0.75rem',
-              fontWeight: section.isAppearanceLabel ? 900 : undefined
             }}
           >
             {section.label}
           </p>
           {Array.isArray(section.content) ? (
-            <ul className="text-right text-sm list-disc list-inside space-y-1" style={{ fontSize:'0.75rem', color: '#FFFFFF' }} dir="rtl">
+            <ul
+              className="text-right list-disc list-outside pr-4 space-y-1 text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+              style={{ color: '#FFFFFF' }}
+              dir="rtl"
+            >
               {section.content.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>
           ) : (
-            <p className="text-right text-sm" style={{ fontSize:'0.75rem',color: '#FFFFFF' }}>
+            <p
+              className="text-right text-[0.75rem] md:text-[1rem] leading-[0.9375rem] md:leading-[1.5rem]"
+              style={{ color: '#FFFFFF' }}
+            >
               {section.content}
             </p>
           )}

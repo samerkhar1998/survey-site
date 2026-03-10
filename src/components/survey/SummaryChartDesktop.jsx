@@ -3,7 +3,7 @@ import ArrowAsset from "../../assets/Arrow 1.svg";
 import VectorTick from "../../assets/Vector 2.svg";
 
 const remToPx = (rem) => rem * 16;
-const SCALE = 1.5;
+const SCALE = 2;
 
 const BOX_WIDTH = remToPx(22 * SCALE);
 const BOX_HEIGHT = remToPx(13.1332 * SCALE);

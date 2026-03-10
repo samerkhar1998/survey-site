@@ -12,8 +12,7 @@
     
     font-synthesis: none;
     /* text-rendering: optimizeLegibility; */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /* Avoid forced grayscale font smoothing; it can make text look washed out on macOS. */
 
     
     color-scheme: light dark;

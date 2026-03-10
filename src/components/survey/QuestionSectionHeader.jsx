@@ -11,7 +11,7 @@ export default function QuestionSectionHeader({ title }) {
                   
                   }}
     >
-      <span className="text-sm font-bold" style={{ color: '#FFFFFF',fontSize:'0.75rem', marginRight:'25px' }}>
+      <span className="font-bold text-[0.75rem] md:text-[1rem]" style={{ color: '#FFFFFF', marginRight:'25px' }}>
         {title}
       </span>
     </div>

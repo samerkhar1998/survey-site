@@ -22,12 +22,9 @@ export default function SurveySummary({ sectionAverages }) {
       >
         {/* Header */}
         <h2 
-          className="text-right px-[0px]"
+          className="text-right px-[0px] font-bold text-[0.875rem] md:text-[1.25rem] md:leading-[1.5rem]"
           style={{ 
             color: '#0A476D', 
-            fontSize: '0.875rem', 
-            fontStyle:'bold',
-            fontWeight: '700',
             marginBottom: '15px'
           }}
         >
@@ -40,13 +37,17 @@ export default function SurveySummary({ sectionAverages }) {
         <div className="md:hidden">
           <SummaryChart sectionAverages={sectionAverages} />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block h-[25rem]">
           <SummaryChartDesktop sectionAverages={sectionAverages} />
         </div>
       </div>
 
       {/* Bullets after chart */}
-      <div className="px-[25px] mt-4 text-right space-y-2" style={{ color: '#0A476D', fontSize: '0.75rem', fontWeight:'400' }} dir="rtl">
+      <div
+        className="px-[25px] mt-4 text-right space-y-2 text-[0.75rem] md:text-[1rem] md:leading-[1.5rem] font-normal"
+        style={{ color: '#0A476D' }}
+        dir="rtl"
+      >
         <div className="flex items-start gap-2">
           <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
           <p>לאחר זיהוי התחומים בהם כדאי להעמיק או לשפר את היישום בפועל, תוכלו להיעזר בפרקים 2 עד 5 שלהלן המציעים כלים, עקרונות ודוגמאות שיעזרו לכם לפתח סל רווחה מגוון ומותאם תרבותית – צעד אחר צעד.</p>

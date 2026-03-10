@@ -23,27 +23,24 @@ export default function AverageCalculator({ answers }) {
   // Calculate polygon position (percentage)
   const getPolygonPosition = () => {
     if (average === 0) return 50;
-    // Map 1-5 to percentage across the 5 color bars (270px total width)
-    const percentage = ((average - 1) / 4) * 100;
-    return percentage;
+    // Map 1-5 across the center of each of the 5 color bars.
+    // Using 10%..90% keeps the indicator centered inside the track (works regardless of track width).
+    return 10 + ((average - 1) / 4) * 80;
   };
 
   return (
     <div 
-      className="w-full p-4"
+      className="w-full p-4 md:px-4 md:pt-[2.7rem] md:pb-[2.5rem]"
       style={{ backgroundColor: 'rgba(91, 75, 67, 0.1)' }}
     >
       {/* Calculate button */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 md:mb-6">
         <button
           onClick={() => setShowAverage(true)}
-          className="flex items-center justify-center font-normal rounded"
+          className="flex items-center justify-center font-normal rounded text-[0.625rem] md:text-[1rem] w-[7.5rem] h-[1.7875rem] md:h-[2.3rem]"
           style={{ 
             backgroundColor: '#0A476D', 
             color: '#FFFFFF',
-            width: '7.5rem',
-            height: '1.7875rem',
-            fontSize: '0.625rem'
           }}
         >
           חשב ממוצע
@@ -57,11 +54,9 @@ export default function AverageCalculator({ answers }) {
           {scaleColors.map((item) => (
             <div
               key={item.value}
-              className="text-center font-normal"
+              className="text-center font-normal text-[0.625rem] md:text-[1rem] w-[3.375rem] md:w-[4.375rem]"
               style={{ 
                 color: '#797979',
-                width: '3.375rem',
-                fontSize: '0.625rem'
               }}
             >
               {item.value}
@@ -72,7 +67,7 @@ export default function AverageCalculator({ answers }) {
         {/* Polygon indicator - between numbers and colors */}
         {showAverage && (
           <div className="flex justify-center" style={{ direction: 'ltr' }}>
-            <div className="relative" style={{ width: '13.5rem', height: '0.325rem' }}>
+            <div className="relative h-[0.325rem] w-[16.875rem] md:w-[21.875rem]">
               <img
                 src={PolygonIcon}
                 alt="indicator"
@@ -88,10 +83,9 @@ export default function AverageCalculator({ answers }) {
           {scaleColors.map((item) => (
             <div
               key={item.value}
+              className="h-[0.375rem] w-[3.375rem] md:w-[4.375rem]"
               style={{ 
                 backgroundColor: item.color,
-                width: '3.375rem',
-                height: '0.375rem'
               }}
             />
           ))}
@@ -102,10 +96,9 @@ export default function AverageCalculator({ answers }) {
           {scaleColors.map((item) => (
             <div
               key={item.value}
-              className="text-center text-xs"
+              className="text-center text-[0.75rem] md:text-[1rem] w-[3.375rem] md:w-[4.375rem]"
               style={{ 
                 color: '#0A476D',
-                width: '54px'
               }}
             >
               {item.label}
@@ -116,7 +109,7 @@ export default function AverageCalculator({ answers }) {
         {/* Average value display - only shows after clicking */}
         {showAverage && (
           <div className="text-center mt-1">
-            <span className="font-bold" style={{ color: '#0A476D', fontSize: '0.75rem' }}>
+            <span className="font-bold text-[0.75rem] md:text-[1rem]" style={{ color: '#0A476D' }}>
               ממוצע: {average.toFixed(1)}
             </span>
           </div>

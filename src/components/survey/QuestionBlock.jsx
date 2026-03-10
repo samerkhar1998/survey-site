@@ -11,11 +11,14 @@ export default function QuestionBlock({ questionNumber, questionText, selectedVa
 
   return (
     <div 
-      className="w-full p-4"
+      className="w-full px-4 py-4 md:py-6"
       style={{ backgroundColor: 'rgba(10, 71, 109, 0.05)' }}
     >
       {/* Question text */}
-      <p className="text-right text-sm mb-4" style={{ color: '#0A476D', marginRight:'25px', fontSize: '0.75rem' }}>
+      <p
+        className="text-right mb-4 text-[0.75rem] md:text-[1rem]"
+        style={{ color: '#0A476D', marginRight:'25px' }}
+      >
         {questionNumber}. {questionText}
       </p>
 
@@ -28,14 +31,13 @@ export default function QuestionBlock({ questionNumber, questionText, selectedVa
             <button
               key={num}
               onClick={() => handleClick(num)}
-              className="w-10 h-10 flex items-center justify-center transition-colors duration-200 rounded text-sm font-normal"
+              className="w-10 h-10 flex items-center justify-center transition-colors duration-200 rounded font-normal text-[0.75rem] md:text-[1rem]"
               style={{
                 backgroundColor: isSelected ? '#0A476D' : '#D9D9D9',
                 color: isSelected ? '#FFFFFF' : '#0A476D',
                 width: '3.375rem',
                 height: '2.3125rem',
-                gap: '0.625rem',
-                fontSize: '0.75rem'
+                gap: '0.625rem'
               }}
               onMouseEnter={(e) => {
                 if (!isSelected && window.innerWidth >= 768) {
