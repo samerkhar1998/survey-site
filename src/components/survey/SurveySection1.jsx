@@ -95,21 +95,19 @@ export default function SurveySection1() {
         />
 
         <div
-          className="text-right leading-tight absolute inset-0 flex flex-col items-end justify-center"
-          style={{
-            color: '#0A476D',
-            width: '100%',
-            textAlign: 'right',
-            paddingInline: '1rem'
-          }}
+          className="absolute inset-0 flex items-center"
+          style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
         >
-          <span className="text-lg text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right', width: '100%'}}>
-            <span className="font-black text-[0.825rem] md:text-[1.25rem]">פרק 1:</span>{" "}
-            <span className="font-bold text-[0.75rem] md:text-[1rem]">בחן את עצמך</span>
-          </span>
-          <span className="text-sm font-normal text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right', width: '100%'}}>
-            עד כמה סל הרווחה שלנו מותאם סובלנות והוגנות
-          </span>
+          <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '2.125rem', height: '2.125rem' }} />
+          <div className="flex-1 flex flex-col leading-tight">
+            <span className="text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right' }}>
+              <span className="font-black text-[0.825rem] md:text-[1.25rem]">פרק 1:</span>{" "}
+              <span className="font-bold text-[0.75rem] md:text-[1rem]">בחן את עצמך</span>
+            </span>
+            <span className="font-normal text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right' }}>
+              עד כמה סל הרווחה שלנו מותאם סובלנות והוגנות
+            </span>
+          </div>
         </div>
       </div>
 

@@ -9,6 +9,7 @@ import CulturalEventCard from "./CulturalEventCard";
 import SectionRectangle from "../../assets/Section rectangle.svg";
 import AccuracyIcon from "../../assets/Accuracy.svg";
 import CommentsIcon from "../../assets/Comments.svg";
+import SearchIcon from "../../assets/search icon.svg";
 import EllipseDot from "../../assets/Ellipse 1.svg";
 import { X } from "lucide-react";
 
@@ -32,10 +33,11 @@ export default function SurveySection2() {
           }}
         />
         <div
-          className="absolute inset-0 leading-tight items-end justify-center text-right text-[0.75rem] md:text-[1rem]"
-          style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right', fontWeight:'700', marginTop:'0.5rem', paddingTop:'0.25rem' }}
+          className="absolute inset-0 flex items-center"
+          style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
         >
-          <span className="font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right', width: '-webkit-fill-available', paddingRight:'35px', fontWeight:'900' }}>פרק 2: </span>חגים ומועדים / ימים משמעותיים
+          <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
+          <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 2: <span className="font-bold">חגים ומועדים / ימים משמעותיים</span></span>
         </div>
       </div>
 
@@ -299,14 +301,11 @@ export default function SurveySection2() {
             }}
           />
           <div
-            className="absolute inset-0 flex items-center justify-end text-right text-[0.75rem] md:text-[1rem]"
-            style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right' }}
+            className="absolute inset-0 flex items-center"
+            style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
           >
-            <span className="font-black text-sm text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right', width: '-webkit-fill-available' , paddingRight: '25px'}}>פרק 3
-              <span className="font-bold" >: אירועי חברה וגיבושי צוות</span>
-              
-
-            </span>
+            <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
+            <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 3<span className="font-bold">: אירועי חברה וגיבושי צוות</span></span>
           </div>
         </div>
 
@@ -572,14 +571,11 @@ export default function SurveySection2() {
                   }}
                 />
 	                <div
-	                  className="absolute inset-0 flex items-center justify-end text-right text-[0.75rem] md:text-[1rem]"
-	                  style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right' }}
+	                  className="absolute inset-0 flex items-center"
+	                  style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                >
-	                  <span className="font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right', width: '-webkit-fill-available' , paddingRight: '25px'}}>פרק 4
-	                    <span className="font-bold" >: אירועים אישיים בחיי העובד</span>
-                    
-
-                  </span>
+	                  <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
+	                  <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 4<span className="font-bold">: אירועים אישיים בחיי העובד</span></span>
                 </div>
               </div>
 
@@ -970,15 +966,14 @@ export default function SurveySection2() {
               {/* Section 5: Career Milestones */}
               <div id="section5" className="mt-[5px]">
                 {/* Banner */}
-	                <div className="relative ml-auto mb-6" style={{ width: '19.25rem', height: '2.5rem', marginTop: '1.25rem', right: '-25px' }}>
+	                <div className="relative ml-auto mb-6 w-[19.25rem] h-[2.5rem] md:w-[22.25rem] md:h-[3.5rem]" style={{ marginTop: '1.25rem', right: '-25px' }}>
 	                  <img src={SectionRectangle} alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
 	                  <div
-	                    className="absolute inset-0 flex items-center justify-end text-right text-[0.75rem] md:text-[1rem]"
-	                    style={{ color: '#0A476D', width: '-webkit-fill-available', textAlign: 'right' }}
+	                    className="absolute inset-0 flex items-center"
+	                    style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                  >
-	                    <span className="font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right', width: '-webkit-fill-available' , paddingRight: '25px'}}>פרק 5
-	                      <span className="font-bold" >: ציון דרך בקריירה</span>
-	                    </span>
+	                    <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
+	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 5<span className="font-bold">: ציון דרך בקריירה</span></span>
 	                  </div>
 	                </div>
 
@@ -1160,14 +1155,11 @@ export default function SurveySection2() {
 		                >
 		                  <img src={SectionRectangle} alt="Banner" className="w-full h-full object-cover" style={{borderBottomRightRadius: "0px",borderTopLeftRadius: "60px",}}/>
 	                  <div
-	                    className="absolute inset-0 flex items-center justify-end text-right text-[0.75rem] md:text-[1rem]"
-	                    style={{ color: '#0A476D', width: '90%', textAlign: 'right' }}
+	                    className="absolute inset-0 flex items-center"
+	                    style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                  >
-	                    <span className="font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right', width: '-webkit-fill-available' , paddingRight: '25px'}}>פרק 6:
-	                      
-	                      <span className="font-bold" > מפת דרכים ליצירת סל רווחה ארגוני מותאם תרבותית</span>
-
-                    </span>
+	                    <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
+	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 6:<span className="font-bold"> מפת דרכים ליצירת סל רווחה ארגוני מותאם תרבותית</span></span>
                   </div>
                 </div>
 
