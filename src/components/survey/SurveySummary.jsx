@@ -43,18 +43,25 @@ export default function SurveySummary({ sectionAverages }) {
       </div>
 
       {/* Bullets after chart */}
-      <div
-        className="px-[25px] mt-4 text-right space-y-2 text-[0.75rem] md:text-[1rem] md:leading-[1.5rem] font-normal"
-        style={{ color: '#0A476D' }}
-        dir="rtl"
-      >
-        <div className="flex items-start gap-2">
-          <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
-          <p>לאחר זיהוי התחומים בהם כדאי להעמיק או לשפר את היישום בפועל, תוכלו להיעזר בפרקים 2 עד 5 שלהלן המציעים כלים, עקרונות ודוגמאות שיעזרו לכם לפתח סל רווחה מגוון ומותאם תרבותית – צעד אחר צעד.</p>
+      <div className="flex mt-4 overflow-hidden" style={{ direction: "rtl" }}>
+        {/* Right: solid navy icon block */}
+        <div
+          className="flex items-center justify-center flex-shrink-0 px-4"
+          style={{ backgroundColor: '#0A476D' }}
+        >
+          <img src={MegaphoneIcon} alt="Megaphone" style={{ width: '1.25rem', height: '1.25rem' }} />
         </div>
-        <div className="flex items-start gap-2">
-          <img src={MegaphoneIcon} alt="Megaphone" className="w-3 h-3 mt-1" />
-          <p>במידה והציונים ברוב הצירים נמוכים, או אם ברצונכם לבנות תכנית עבודה שלמה ולזהות את צעדיה, מומלץ להיעזר בפרק 6, הכולל מפת דרכים בת 7 צעדים ליצירת סל רווחה מגוון ומותאם תרבותית, שיאפשר לכם לבחור נקודת התחלה ולהתקדם בצורה מדורגת וריאלית.</p>
+        {/* Left: 15% navy text block */}
+        <div
+          className="flex-1 px-4 py-3 space-y-2"
+          style={{ backgroundColor: 'rgba(10, 71, 109, 0.15)' }}
+        >
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            לאחר זיהוי התחומים בהם כדאי להעמיק או לשפר את היישום בפועל, תוכלו להיעזר בפרקים 2 עד 5 שלהלן המציעים כלים, עקרונות ודוגמאות שיעזרו לכם לפתח סל רווחה מגוון ומותאם תרבותית – צעד אחר צעד.
+          </p>
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            במידה והציונים ברוב הצירים נמוכים, או אם ברצונכם לבנות תכנית עבודה שלמה ולזהות את צעדיה, מומלץ להיעזר בפרק 6, הכולל מפת דרכים בת 7 צעדים ליצירת סל רווחה מגוון ומותאם תרבותית, שיאפשר לכם לבחור נקודת התחלה ולהתקדם בצורה מדורגת וריאלית.
+          </p>
         </div>
       </div>
 
