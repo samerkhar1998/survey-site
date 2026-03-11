@@ -4,6 +4,9 @@ import SurveySummary from "./SurveySummary";
 import SectionRectangle from "../../assets/Section rectangle.svg";
 import AccuracyIcon from "../../assets/Accuracy.svg";
 import OperaGlasses from "../../assets/Opera Glasses.svg";
+import SearchIcon from "../../assets/search icon.svg";
+import CalendarIcon from "../../assets/calendar 1.svg";
+import BusinessPlanIcon from "../../assets/business-plan 1.svg";
 
 const holidaysQuestions = [
 "עד כמה הארגון מכיר ומתייחס לכלל חגי האוכלוסיות השונות?",
@@ -57,14 +60,20 @@ export default function SurveySection1() {
 	      </p>
 
 	      {/* 2. Chapters description */}
-	      <ul
-	        className="text-right mt-2 list-disc list-outside pr-4 text-[0.75rem] md:text-[1rem]"
-	        style={{ color: '#5B4B43' }}
-	      >
-	        <li style={{marginBottom:'5px'}}>הראשון: "בחן את עצמך" – מידת בשלות הארגון בתחום הרווחה המגוונת בארבעה צירים.</li>
-	        <li style={{marginBottom:'5px'}}><span>ארבעת הפרקים הנוספים</span> עוסקים בארבעת הצירים הנ"ל שהם עולמות תוכן שונים של רווחה ארגונית, וכוללים עקרונות מנחים, צעדים ופרקטיקות ליישום.</li>
-	        <li><span>פרק שישי:</span> מפת דרכים ליצירת סל רווחה ארגוני שלם מותאם תרבותית.</li>
-	      </ul>
+	      <div className="mt-2 space-y-2" style={{ direction: 'rtl', color: '#5B4B43' }}>
+	        <div className="flex items-start gap-2">
+	          <img src={SearchIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]">הראשון: "בחן את עצמך" – מידת בשלות הארגון בתחום הרווחה המגוונת בארבעה צירים.</p>
+	        </div>
+	        <div className="flex items-start gap-2">
+	          <img src={CalendarIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]"><span>ארבעת הפרקים הנוספים</span> עוסקים בארבעת הצירים הנ"ל שהם עולמות תוכן שונים של רווחה ארגונית, וכוללים עקרונות מנחים, צעדים ופרקטיקות ליישום.</p>
+	        </div>
+	        <div className="flex items-start gap-2">
+	          <img src={BusinessPlanIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]"><span>פרק שישי:</span> מפת דרכים ליצירת סל רווחה ארגוני שלם מותאם תרבותית.</p>
+	        </div>
+	      </div>
 
       {/* 3. Rectangle Banner */}
       <div
