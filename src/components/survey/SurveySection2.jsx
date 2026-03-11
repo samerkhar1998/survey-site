@@ -973,7 +973,7 @@ export default function SurveySection2() {
 	                    style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                  >
 	                    <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 5<span className="font-bold">: ציון דרך בקריירה</span></span>
+	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 5<span className="font-bold">: היבטי רווחה במחזור חיי העובד</span></span>
 	                  </div>
 	                </div>
 
