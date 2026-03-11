@@ -88,15 +88,17 @@ export default function SurveySection2() {
       </div>
 
       {/* Bottom recommendation */}
-      <div className="flex items-start gap-2 mt-[5px] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-        <img
-          src={CommentsIcon}
-          alt="Comments"
-          style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
-        />
-        <p className="text-right text-sm leading-relaxed">
-          <span className="text-[0.75rem] md:text-[1rem] md:leading-[1.5rem] font-normal">יש ליישם את הרעיונות ככל שהם נהוגים בארגון גם לכלל האוכלוסייה</span>
-        </p>
+      <div className="flex mt-[5px] overflow-hidden" style={{ direction: "rtl" }}>
+        {/* Right: solid green icon block */}
+        <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+          <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+        </div>
+        {/* Left: 30% green text block */}
+        <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            יש ליישם את הרעיונות ככל שהם נהוגים בארגון גם לכלל האוכלוסייה
+          </p>
+        </div>
       </div>
 
       {/* Cultural Event Cards */}
@@ -256,38 +258,21 @@ export default function SurveySection2() {
       
 
       {/* Additional recommendations after cards */}
-      <div className="mt-[7px] space-y-[5px]">
-        <div className="flex items-start gap-[0.5rem] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
-          />
-          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>
-                בעת תכנון פעילות לחג, יש לערב לכך נציגות מש"א והרווחה, גם מנהלים מצוותים מגוונים, ועובדים שחוגגים את החג, במטרה לחזק את תחושת השייכות של העובדים לארגון ולקבל מהם הערות וטיפים.
-          </p>
+      <div className="flex mt-[7px] overflow-hidden" style={{ direction: "rtl" }}>
+        {/* Right: solid green icon block spanning full height */}
+        <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+          <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
         </div>
-
-        <div className="flex items-start gap-[0.5rem] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-          
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
-          />
-          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>
-                מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
+        {/* Left: 30% green text block with multiple paragraphs */}
+        <div className="flex-1 px-4 py-3 space-y-2" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            בעת תכנון פעילות לחג, יש לערב לכך נציגות מש"א והרווחה, גם מנהלים מצוותים מגוונים, ועובדים שחוגגים את החג, במטרה לחזק את תחושת השייכות של העובדים לארגון ולקבל מהם הערות וטיפים.
           </p>
-        </div>
-
-        <div className="flex items-start gap-[0.5rem] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
-          />
-          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>
-                חשוב לתכנן את החופשות בהתאם ללוחות החגים של העובדים השונים, כך שתתאפשר להם מנוחה וחגיגה בהתאם למסורתם ותרבותם, ותישמר תחושת ההתחשבות והשוויון בארגון.
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            מומלץ לתכנן את ציון החגים מראש ולבסוך לחבר בין החגים החלים בסמוך, באמצעות ברכה משותפת, חלוקת מתנות מותאמות לפי חגא (באותו שווי), או קישוט כולל: למשל: חנוכה וכריסטמס, ראש השנה היהודי והנוצרי, פסח ופסחא.
+          </p>
+          <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+            חשוב לתכנן את החופשות בהתאם ללוחות החגים של העובדים השונים, כך שתתאפשר להם מנוחה וחגיגה בהתאם למסורתם ותרבותם, ותישמר תחושת ההתחשבות והשוויון בארגון.
           </p>
         </div>
       </div>
@@ -338,27 +323,21 @@ export default function SurveySection2() {
 	        </div>
 
 	        {/* Bullets */}
-	        <div className="flex items-start gap-2 mt-[5px] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-	          <img
-	            src={CommentsIcon}
-	            alt="Comments"
-	            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
-	          />
-	          <p className="text-right text-sm leading-relaxed">
-	            <span className="text-[0.75rem] md:text-[1rem] md:leading-[1.5rem] font-normal">אירועי צוות ואירועי חברה הם מרכיב מרכזי בתרבות הארגונית, אך מטרותיהם שונות ומשלימות: השילוב ביניהם מטפח גם לכידות פנים - צוותית וגם שייכות ארגונית רחבה.</span>
-	          </p>
-	        </div>  
-
-	        <div className="flex items-start gap-2 mt-[5px] text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-	          <img
-	            src={CommentsIcon}
-	            alt="Comments"
-	            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.3rem' }}
-	          />
-	          <p className="text-right text-sm leading-relaxed">
-	            <span className="text-[0.75rem] md:text-[1rem] md:leading-[1.5rem] font-normal">אירוע צוות מוצלח הוא תוצאה של עבודת גיבוש והכנה מוקדמת - הבנת הצרכים, שיתוף בתכנון ויצירת תנאים המאפשרים השתתפות נוחה לכל העובדים, ובכך מחזק היכרות, אמון ושיתוף פעולה. לעומתו, אירוע חברה מחזק זהות ארגונית, תחושת קהילה ו"גאוות יחידה" באמצעות חוויה רחבה ורגישה תרבותית.</span>
-	          </p>
-	        </div>  
+	        <div className="flex mt-[5px] overflow-hidden" style={{ direction: "rtl" }}>
+	          {/* Right: solid green icon block spanning full height */}
+	          <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+	            <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          </div>
+	          {/* Left: 30% green text block with multiple paragraphs */}
+	          <div className="flex-1 px-4 py-3 space-y-2" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+	            <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+	              אירועי צוות ואירועי חברה הם מרכיב מרכזי בתרבות הארגונית, אך מטרותיהם שונות ומשלימות: השילוב ביניהם מטפח גם לכידות פנים - צוותית וגם שייכות ארגונית רחבה.
+	            </p>
+	            <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+	              אירוע צוות מוצלח הוא תוצאה של עבודת גיבוש והכנה מוקדמת - הבנת הצרכים, שיתוף בתכנון ויצירת תנאים המאפשרים השתתפות נוחה לכל העובדים, ובכך מחזק היכרות, אמון ושיתוף פעולה. לעומתו, אירוע חברה מחזק זהות ארגונית, תחושת קהילה ו"גאוות יחידה" באמצעות חוויה רחבה ורגישה תרבותית.
+	            </p>
+	          </div>
+	        </div>
 
 
 	        {/* עקרונות מנחים */}
@@ -422,25 +401,19 @@ export default function SurveySection2() {
         
 
 	        {/* Additional recommendations after cards */}
-	        <div className="mt-6 space-y-4" style={{marginTop:'8px'}}>
-	        <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
-          />
-	          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>   
- כאשר הנהלה חוזרת על מסרים מגבשים של סובלנות והוגנות בעקביות, הם מחלחלים כלפי מטה ומסייעים לעצב תרבות ארגונית סובלנית ומחבקת.</p>
-	        </div>
-
-          <div className="flex items-start gap-2" style={{ color: '#79BF98' }}>
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
-          />
-	          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-	מומלץ לנהל שיח פתוח עם עובדים מהחברה הערבית בעת תכנון האירוע, כדי להבין צרכים ומגבלות            (זמנים, מיקום, אוכל, אופי הפעילות) ולתאם ציפיות מראש. חשוב להבהיר כי ייתכן שהאירוע לא יתאים במלואו לכל צורך, אך נעשה מאמץ למצוא פתרונות מותאמים וכי השתתפות כלל חברי הצוות משמעותית להצלחת האירוע לעצם ההשתדלות יש ערך רב.          </p>
+	        <div className="flex mt-[8px] overflow-hidden" style={{ direction: "rtl" }}>
+	          {/* Right: solid green icon block spanning full height */}
+	          <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+	            <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          </div>
+	          {/* Left: 30% green text block with multiple paragraphs */}
+	          <div className="flex-1 px-4 py-3 space-y-2" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+	            <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+	              כאשר הנהלה חוזרת על מסרים מגבשים של סובלנות והוגנות בעקביות, הם מחלחלים כלפי מטה ומסייעים לעצב תרבות ארגונית סובלנית ומחבקת.
+	            </p>
+	            <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+	              מומלץ לנהל שיח פתוח עם עובדים מהחברה הערבית בעת תכנון האירוע, כדי להבין צרכים ומגבלות            (זמנים, מיקום, אוכל, אופי הפעילות) ולתאם ציפיות מראש. חשוב להבהיר כי ייתכן שהאירוע לא יתאים במלואו לכל צורך, אך נעשה מאמץ למצוא פתרונות מותאמים וכי השתתפות כלל חברי הצוות משמעותית להצלחת האירוע לעצם ההשתדלות יש ערך רב.
+	            </p>
 	          </div>
 	        </div>
 
@@ -624,14 +597,17 @@ export default function SurveySection2() {
 	              </div>
 
 	              {/* Green paragraph */}
-	              <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <img
-                  src={CommentsIcon}
-                  alt="Comments"
-                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
-                />
-	                <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-	      להבנה זו חשיבות מיוחדת עבור עובדים מהחברה הערבית, המאופיינת בתרבות קולקטיביסטית, שבה תחושת הכלל            (המשפחה) והמעמד של העובד בעיני סביבתו משפיעים באופן ישיר על תחושת המחוברות והגאווה שלו כלפי היותו חלק ממקום עבודה מסוים, ובסופו של דבר גם על שימורו בארגון.</p>
+	              <div className="flex mt-[10px] overflow-hidden" style={{ direction: "rtl" }}>
+	                {/* Right: solid green icon block */}
+	                <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+	                  <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+	                </div>
+	                {/* Left: 30% green text block */}
+	                <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+	                  <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+	                    להבנה זו חשיבות מיוחדת עבור עובדים מהחברה הערבית, המאופיינת בתרבות קולקטיביסטית, שבה תחושת הכלל            (המשפחה) והמעמד של העובד בעיני סביבתו משפיעים באופן ישיר על תחושת המחוברות והגאווה שלו כלפי היותו חלק ממקום עבודה מסוים, ובסופו של דבר גם על שימורו בארגון.
+	                  </p>
+	                </div>
 	              </div>
 
 	              {/* הקדמה */}
@@ -799,14 +775,17 @@ export default function SurveySection2() {
               </div>
 
               {/* Additional note after cards */}
-              <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <img
-                  src={CommentsIcon}
-                  alt="Comments"
-                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
-                />
-                <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-על הארגון והמנהלים להכיר את מנהגי האבלות של הדתות והעדות השונות, כדי לנהוג ברגישות ולמנוע מצבים מביכים.לדוגמה, מנהלים שהגיעו להלוויה של עובד ממוצא אתיופי עם גלגל אבל, מחווה שנתפסת בעדה כמנהג נוצרי ומעליב, יכלו להימנע מכך באמצעות היכרות מוקדמת עם הנורמות התרבותיות.                </p>
+              <div className="flex mt-[10px] overflow-hidden" style={{ direction: "rtl" }}>
+                {/* Right: solid green icon block */}
+                <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+                  <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+                </div>
+                {/* Left: 30% green text block */}
+                <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+                  <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+                    על הארגון והמנהלים להכיר את מנהגי האבלות של הדתות והעדות השונות, כדי לנהוג ברגישות ולמנוע מצבים מביכים.לדוגמה, מנהלים שהגיעו להלוויה של עובד ממוצא אתיופי עם גלגל אבל, מחווה שנתפסת בעדה כמנהג נוצרי ומעליב, יכלו להימנע מכך באמצעות היכרות מוקדמת עם הנורמות התרבותיות.
+                  </p>
+                </div>
               </div>
 
               
@@ -921,11 +900,11 @@ export default function SurveySection2() {
                     sections={[
                       {
                         label: "מוסלמים | דרוזים:",
-                        content: "אם הארגון נוהג להציע למשפחה האבלה ערכת קפה וכיסאות לימי האבל, יש להתאים את הערכה לקפה  טחון ותמרים, ולהציע כיסאות ואוהל בימי חורף."
+                        content: "אם הארגון נוהג להציע למשפחה האבלה ערכת קפה וכיסאות לימי האבל, יש להתאים את הערכה לקפה טחון ותמרים, ולהציע כיסאות ואוהל בימי חורף."
                       },
                       {
                         label: "נוצרים:",
-                        content: "גם אם הארגון נוהג להציע למשפחה האבלה ערכת  קפה וכיסאות לימי האבל, אין צורך בכך"
+                        content: "גם אם הארגון נוהג להציע למשפחה האבלה ערכת קפה וכיסאות לימי האבל, אין צורך בכך"
                       },
                       {
                         label: "מזון – מה צפוי למנחמים",
@@ -969,15 +948,18 @@ export default function SurveySection2() {
 	                  באופן כללי, עובדים ממעמד סוציו-אקונומי נמוך נתקלים בשיעורים יותר גבוהים במשברים אישיים ומשפחתיים כגון קשיים ככלכליים, שיקולים, גירושין או מצבי אלימות. חשוב שהארגון יכיר בכך, יכיר את המציאות (למשל תקופות של אלימות נרחבת יותר) ויספק ברגישות, ייצע תמיכה מותאמת וישמור על כבוד ופרטיותו של העובד.
 	                </p>
 
-                <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <img
-                  src={CommentsIcon}
-                  alt="Comments"
-                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
-                />
-	                <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-	בחברות בהן שיעור גדול יחסית של עובדים מאוכלוסיות רווחה, מומלץ לשלב במקום העבודה עו״ס שמכיר את כלל האוכלוסיות, לטיפול וסיוע.      </p>
-	              </div>
+                <div className="flex mt-[10px] overflow-hidden" style={{ direction: "rtl" }}>
+                  {/* Right: solid green icon block */}
+                  <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+                    <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+                  </div>
+                  {/* Left: 30% green text block */}
+                  <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+                    <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+                      בחברות בהן שיעור גדול יחסית של עובדים מאוכלוסיות רווחה, מומלץ לשלב במקום העבודה עו״ס שמכיר את כלל האוכלוסיות, לטיפול וסיוע.
+                    </p>
+                  </div>
+                </div>
 	              </div>
 
               {/* Bottom green line */}
@@ -1013,15 +995,18 @@ export default function SurveySection2() {
 	              </div>
 
                 {/* Green bullet */}
-                <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                  <img
-                    src={CommentsIcon}
-                    alt="Comments"
-                    style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
-                  />
-	                  <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-	כוונת הארגון בהוקרת עובדים היא חיובית, אך הוקרה שאינה מותאמת לקודים התרבותיים עלולה לעורר מבוכה ואי-נוחות, להפוך לחוויה שלילית ולהגביר תחושת ניכור, במקום לחזק את תחושת הבית והשייכות. </p>
-	                </div>
+                <div className="flex mt-[10px] overflow-hidden" style={{ direction: "rtl" }}>
+                  {/* Right: solid green icon block */}
+                  <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+                    <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+                  </div>
+                  {/* Left: 30% green text block */}
+                  <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+                    <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+                      כוונת הארגון בהוקרת עובדים היא חיובית, אך הוקרה שאינה מותאמת לקודים התרבותיים עלולה לעורר מבוכה ואי-נוחות, להפוך לחוויה שלילית ולהגביר תחושת ניכור, במקום לחזק את תחושת הבית והשייכות.
+                    </p>
+                  </div>
+                </div>
 
 	                {/* הקדמה */}
 	                <div className="text-right leading-relaxed md:leading-[1.5rem] mt-[5px] text-[0.75rem] md:text-[1rem]" style={{ color: '#5B4B43' }}>
@@ -1147,15 +1132,18 @@ export default function SurveySection2() {
                 </div>
 
                 {/* Green bullet recommendation */}
-                <div className="flex items-start gap-2 mt-[10px]" style={{ color: '#79BF98' }}>
-                <img
-                  src={CommentsIcon}
-                  alt="Comments"
-                  style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.15rem' }}
-                />
-                <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>    
-בעת השתתפות עובד מהחברה הערבית בתכנית "חבר מביא חבר", מומלץ שהתגמול יתאים לציפיות ולמאפייני כלל העובדים. אפשר לתת מענק כספי, שוברים או תעודת הוקרה, כדי לחזק מעורבות קהילתית ולעודד גיוס מגוון.</p>
-              </div>
+                <div className="flex mt-[10px] overflow-hidden" style={{ direction: "rtl" }}>
+                  {/* Right: solid green icon block */}
+                  <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+                    <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+                  </div>
+                  {/* Left: 30% green text block */}
+                  <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+                    <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+                      בעת השתתפות עובד מהחברה הערבית בתכנית "חבר מביא חבר", מומלץ שהתגמול יתאים לציפיות ולמאפייני כלל העובדים. אפשר לתת מענק כספי, שוברים או תעודת הוקרה, כדי לחזק מעורבות קהילתית ולעודד גיוס מגוון.
+                    </p>
+                  </div>
+                </div>
 
                 {/* Green line separator */}
                 <div className="mt-8 -mx-[25px]">
@@ -1387,15 +1375,18 @@ export default function SurveySection2() {
                 </div>
 
                 {/* Final recommendation */}
-	                <div className="flex items-start gap-2" style={{ color: '#79BF98',marginTop:'8px'}}>
-	                  <img
-	                    src={CommentsIcon}
-	                    alt="Comments"
-	                    style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.35rem' }}
-	                  />
-	                  <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]" style={{ color: '#79BF98' }}>
-	                    בכל שלב ניתן ומומלץ להתייעץ עם צוות קו אימפקט להצעות ותכנון הפעילויות והרעיונות.</p>
-	                </div>
+                <div className="flex mt-2 overflow-hidden" style={{ direction: "rtl" }}>
+                  {/* Right: solid green icon block */}
+                  <div className="flex items-center justify-center flex-shrink-0 px-4" style={{ backgroundColor: '#79BF98' }}>
+                    <img src={CommentsIcon} alt="Comments" style={{ width: '1.25rem', height: '1.25rem' }} />
+                  </div>
+                  {/* Left: 30% green text block */}
+                  <div className="flex-1 px-4 py-3" style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}>
+                    <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+                      בכל שלב ניתן ומומלץ להתייעץ עם צוות קו אימפקט להצעות ותכנון הפעילויות והרעיונות.
+                    </p>
+                  </div>
+                </div>
 
                 {/* Green line separator */}
                 <div className="mt-[5px] -mx-[25px]">
