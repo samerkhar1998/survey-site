@@ -46,8 +46,8 @@ export default function CardCarousel({ children }) {
 
   return (
     <div className="relative">
-      {/* Desktop arrows */}
-      <div className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10" style={{ left: '-40px' }}>
+      {/* Navigation arrows */}
+      <div className="flex absolute left-0 top-1/2 -translate-y-1/2 z-10" style={{ left: '-40px' }}>
         <button
           onClick={() => scroll('left')}
           disabled={!canScrollLeft}
@@ -59,7 +59,7 @@ export default function CardCarousel({ children }) {
           />
         </button>
       </div>
-      <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10" style={{ right: '-40px' }}>
+      <div className="flex absolute right-0 top-1/2 -translate-y-1/2 z-10" style={{ right: '-40px' }}>
         <button
           onClick={() => scroll('right')}
           disabled={!canScrollRight}
@@ -91,12 +91,6 @@ export default function CardCarousel({ children }) {
             {child}
           </div>
         ))}
-      </div>
-      <div
-        className="md:hidden pb-[5px]"
-        style={{ color: '#5B4B43', fontSize:'0.75rem', lineHeight:'1rem', fontWeight:'400'}}
-      >
-        ניתן לגלול הצידה על מנת לראות חגים ופעילויות נוספים
       </div>
     </div>
   );
