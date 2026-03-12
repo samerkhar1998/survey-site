@@ -99,7 +99,7 @@ export default function SurveySection1() {
           style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
         >
           <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '2.125rem', height: '2.125rem' }} />
-          <div className="flex-1 flex flex-col leading-tight">
+          <div className="flex-1 flex flex-col leading-tight md:leading-[22px]">
             <span className="text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right' }}>
               <span className="font-black text-[0.825rem] md:text-[1.25rem]">פרק 1:</span>{" "}
               <span className="font-bold text-[0.75rem] md:text-[1rem]">בחן את עצמך</span>
