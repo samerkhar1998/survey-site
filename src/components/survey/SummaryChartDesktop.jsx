@@ -19,10 +19,10 @@ const GAP_ADJUSTMENT = 6 * SCALE;
 
 export default function SummaryChartDesktop({ sectionAverages }) {
   const data = [
-    { name: "חגים ומועדים משמעותיים", value: sectionAverages.holidays || 0 },
-    { name: "אירועי חברה", value: sectionAverages.companyEvents || 0 },
-    { name: "אירועים אישיים בחיי העובד", value: sectionAverages.personalEvents || 0 },
-    { name: "ציון דרך בקריירה", value: sectionAverages.careerMilestone || 0 },
+    { name: "חגים ומועדים משמעותיים", chapter: "פרק 1", value: sectionAverages.holidays || 0 },
+    { name: "אירועי חברה", chapter: "פרק 2", value: sectionAverages.companyEvents || 0 },
+    { name: "אירועים אישיים בחיי העובד", chapter: "פרק 3", value: sectionAverages.personalEvents || 0 },
+    { name: "ציון דרך בקריירה", chapter: "פרק 4", value: sectionAverages.careerMilestone || 0 },
   ];
 
   const maxValue = 5;
@@ -131,7 +131,8 @@ export default function SummaryChartDesktop({ sectionAverages }) {
 
         {/* Bars */}
         {data.map((item, index) => {
-          const x = chartStartX + index * (BAR_WIDTH + gap);
+          const reversedIndex = data.length - 1 - index;
+          const x = chartStartX + reversedIndex * (BAR_WIDTH + gap);
           const height = item.value > 0 ? (item.value / maxValue) * MAX_BAR_HEIGHT : 0;
           const y = yAxisBottom - height;
           return (
@@ -169,6 +170,7 @@ export default function SummaryChartDesktop({ sectionAverages }) {
                     direction: "rtl",
                   }}
                 >
+                  <div style={{ fontWeight: 700, marginBottom: "2px" }}>{item.chapter}</div>
                   {item.name.split(" ").map((word) => (
                     <span key={`${item.name}-${word}`}>{word}&ensp;</span>
                   ))}

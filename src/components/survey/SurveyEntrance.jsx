@@ -60,15 +60,31 @@ export default function SurveyEntrance({ onStart }) {
 
 
         {/* Recommendation with icon */}
-        <div className="flex items-start gap-2 mt-4 text-[0.625rem] md:text-[0.875rem] font-normal" style={{ color: '#79BF98' }}>
-          <img
-            src={CommentsIcon}
-            alt="Comments"
-            style={{ width: '0.75rem', height: '0.75rem', marginTop: '0.25rem' }}
-          />
-          <p className="text-right leading-relaxed md:leading-[1.5rem] text-[0.75rem] md:text-[1rem]">
-            <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
-          </p>
+        {/* Recommendation with icon */}
+        <div
+          className="flex mt-4 overflow-hidden"
+          style={{ direction: "rtl" }}
+        >
+          {/* Right: solid green icon block */}
+          <div
+            className="flex items-center justify-center flex-shrink-0 px-4"
+            style={{ backgroundColor: '#79BF98' }}
+          >
+            <img
+              src={CommentsIcon}
+              alt="Comments"
+              style={{ width: '1.25rem', height: '1.25rem' }}
+            />
+          </div>
+          {/* Left: 30% green text block */}
+          <div
+            className="flex-1 px-4 py-3"
+            style={{ backgroundColor: 'rgba(121, 191, 152, 0.3)' }}
+          >
+            <p className="text-right leading-relaxed text-[0.75rem] md:text-[1rem] font-normal" style={{ color: '#0A476D' }}>
+              <span className="font-bold">המלצה גורפת</span> – לשלב עובדים מתרבויות שונות בקבלת החלטות לגבי האירועים והפעילויות השונות
+            </p>
+          </div>
         </div>
       </div>
 

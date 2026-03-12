@@ -4,6 +4,9 @@ import SurveySummary from "./SurveySummary";
 import SectionRectangle from "../../assets/Section rectangle.svg";
 import AccuracyIcon from "../../assets/Accuracy.svg";
 import OperaGlasses from "../../assets/Opera Glasses.svg";
+import SearchIcon from "../../assets/search icon.svg";
+import CalendarIcon from "../../assets/calendar 1.svg";
+import BusinessPlanIcon from "../../assets/business-plan 1.svg";
 
 const holidaysQuestions = [
 "עד כמה הארגון מכיר ומתייחס לכלל חגי האוכלוסיות השונות?",
@@ -57,14 +60,20 @@ export default function SurveySection1() {
 	      </p>
 
 	      {/* 2. Chapters description */}
-	      <ul
-	        className="text-right mt-2 list-disc list-outside pr-4 text-[0.75rem] md:text-[1rem]"
-	        style={{ color: '#5B4B43' }}
-	      >
-	        <li style={{marginBottom:'5px'}}>הראשון: "בחן את עצמך" – מידת בשלות הארגון בתחום הרווחה המגוונת בארבעה צירים.</li>
-	        <li style={{marginBottom:'5px'}}><span>ארבעת הפרקים הנוספים</span> עוסקים בארבעת הצירים הנ"ל שהם עולמות תוכן שונים של רווחה ארגונית, וכוללים עקרונות מנחים, צעדים ופרקטיקות ליישום.</li>
-	        <li><span>פרק שישי:</span> מפת דרכים ליצירת סל רווחה ארגוני שלם מותאם תרבותית.</li>
-	      </ul>
+	      <div className="mt-2 space-y-2" style={{ direction: 'rtl', color: '#5B4B43' }}>
+	        <div className="flex items-start gap-2">
+	          <img src={SearchIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]">הראשון: "בחן את עצמך" – מידת בשלות הארגון בתחום הרווחה המגוונת בארבעה צירים.</p>
+	        </div>
+	        <div className="flex items-start gap-2">
+	          <img src={CalendarIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]"><span>ארבעת הפרקים הנוספים</span> עוסקים בארבעת הצירים הנ"ל שהם עולמות תוכן שונים של רווחה ארגונית, וכוללים עקרונות מנחים, צעדים ופרקטיקות ליישום.</p>
+	        </div>
+	        <div className="flex items-start gap-2">
+	          <img src={BusinessPlanIcon} alt="" className="flex-shrink-0 mt-1" style={{ width: '1.25rem', height: '1.25rem' }} />
+	          <p className="text-right text-[0.75rem] md:text-[1rem]"><span>פרק שישי:</span> מפת דרכים ליצירת סל רווחה ארגוני שלם מותאם תרבותית.</p>
+	        </div>
+	      </div>
 
       {/* 3. Rectangle Banner */}
       <div
@@ -86,21 +95,19 @@ export default function SurveySection1() {
         />
 
         <div
-          className="text-right leading-tight absolute inset-0 flex flex-col items-end justify-center"
-          style={{
-            color: '#0A476D',
-            width: '100%',
-            textAlign: 'right',
-            paddingInline: '1rem'
-          }}
+          className="absolute inset-0 flex items-center"
+          style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
         >
-          <span className="text-lg text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right', width: '100%'}}>
-            <span className="font-black text-[0.825rem] md:text-[1.25rem]">פרק 1:</span>{" "}
-            <span className="font-bold text-[0.75rem] md:text-[1rem]">בחן את עצמך</span>
-          </span>
-          <span className="text-sm font-normal text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right', width: '100%'}}>
-            עד כמה סל הרווחה שלנו מותאם סובלנות והוגנות
-          </span>
+          <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '2.125rem', height: '2.125rem' }} />
+          <div className="flex-1 flex flex-col leading-tight">
+            <span className="text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right' }}>
+              <span className="font-black text-[0.825rem] md:text-[1.25rem]">פרק 1:</span>{" "}
+              <span className="font-bold text-[0.75rem] md:text-[1rem]">בחן את עצמך</span>
+            </span>
+            <span className="font-normal text-[0.75rem] md:text-[1rem]" style={{ textAlign: 'right' }}>
+              עד כמה סל הרווחה שלנו מותאם סובלנות והוגנות
+            </span>
+          </div>
         </div>
       </div>
 
