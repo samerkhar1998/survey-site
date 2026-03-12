@@ -55,9 +55,9 @@ export default function SurveyNavigationMenu() {
       {/* Floating button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 w-20 h-20 rounded-full shadow-2xl flex items-center justify-center z-50 transition-all hover:scale-105"
+        className="fixed bottom-6 right-10 w-20 h-20 rounded-full shadow-2xl flex items-center justify-center z-50 transition-all hover:scale-105"
         style={{
-          backgroundColor: isOpen ? '#0A476D' : '#FFFFFF',
+          backgroundColor: isOpen ? '#0A476D' : '#0A476D0D',
           color: isOpen ? '#FFFFFF' : '#0A476D'
         }}
       >
