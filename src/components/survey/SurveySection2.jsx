@@ -37,7 +37,7 @@ export default function SurveySection2() {
           style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
         >
           <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-          <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 2: <span className="font-bold">חגים ומועדים / ימים משמעותיים</span></span>
+          <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem] md:leading-[22px]" style={{ textAlign: 'right' }}>פרק 2: <span className="font-bold">חגים ומועדים / ימים משמעותיים</span></span>
         </div>
       </div>
 
@@ -305,7 +305,7 @@ export default function SurveySection2() {
             style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
           >
             <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-            <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 3<span className="font-bold">: אירועי חברה וגיבושי צוות</span></span>
+            <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem] md:leading-[22px]" style={{ textAlign: 'right' }}>פרק 3<span className="font-bold">: אירועי חברה וגיבושי צוות</span></span>
           </div>
         </div>
 
@@ -575,7 +575,7 @@ export default function SurveySection2() {
 	                  style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                >
 	                  <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-	                  <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 4<span className="font-bold">: אירועים אישיים בחיי העובד</span></span>
+	                  <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem] md:leading-[22px]" style={{ textAlign: 'right' }}>פרק 4<span className="font-bold">: אירועים אישיים בחיי העובד</span></span>
                 </div>
               </div>
 
@@ -973,7 +973,7 @@ export default function SurveySection2() {
 	                    style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                  >
 	                    <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 5<span className="font-bold">: היבטי רווחה במחזור חיי העובד</span></span>
+	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem] md:leading-[22px]" style={{ textAlign: 'right' }}>פרק 5<span className="font-bold">: היבטי רווחה במחזור חיי העובד</span></span>
 	                  </div>
 	                </div>
 
@@ -1159,7 +1159,7 @@ export default function SurveySection2() {
 	                    style={{ direction: 'rtl', color: '#0A476D', paddingInline: '1rem', gap: '0.75rem' }}
 	                  >
 	                    <img src={SearchIcon} alt="" className="flex-shrink-0" style={{ width: '1.75rem', height: '1.75rem' }} />
-	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem]" style={{ textAlign: 'right' }}>פרק 6:<span className="font-bold"> מפת דרכים ליצירת סל רווחה ארגוני מותאם תרבותית</span></span>
+	                    <span className="flex-1 font-black text-[0.825rem] md:text-[1.25rem] md:leading-[22px]" style={{ textAlign: 'right' }}>פרק 6:<span className="font-bold"> מפת דרכים ליצירת סל רווחה ארגוני מותאם תרבותית</span></span>
                   </div>
                 </div>
 

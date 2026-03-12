@@ -27,7 +27,7 @@ export default function SurveyNavigationMenu() {
       {/* Menu popup */}
       {isOpen && (
         <div 
-          className="fixed bottom-32 right-6 bg-white shadow-2xl rounded-lg overflow-hidden z-50"
+          className="fixed bottom-32 right-6 md:right-[calc(50%-640px)] bg-white shadow-2xl rounded-lg overflow-hidden z-50"
           style={{ width: '350px', maxHeight: '70vh', overflowY: 'auto' }}
         >
           {menuItems.map((item, index) => (
@@ -55,9 +55,9 @@ export default function SurveyNavigationMenu() {
       {/* Floating button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-10 w-20 h-20 rounded-full shadow-2xl flex items-center justify-center z-50 transition-all hover:scale-105"
+        className="fixed bottom-6 right-10 md:right-[calc(50%-640px)] w-20 h-20 rounded-full shadow-2xl flex items-center justify-center z-50 transition-all hover:scale-105"
         style={{
-          backgroundColor: isOpen ? '#0A476D' : '#0A476D0D',
+          backgroundColor: isOpen ? '#0A476D' : '#F3F6F8',
           color: isOpen ? '#FFFFFF' : '#0A476D'
         }}
       >
